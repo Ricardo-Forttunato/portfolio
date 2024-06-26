@@ -1,20 +1,18 @@
-import { EmailJSResponseStatus } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import { useState } from "react";
 
 export default function Contact() {
-	const [nome, setNome] = useState("");
+	const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [tel, setTel] = useState("");
   const [subject, setSubject] = useState("");
   const [textArea, setTextArea] = useState("");
 
   function sendMail(e) {
     e.preventDefault();
     if (
-      nome.length == 0 ||
+      name.length == 0 ||
       email.length == 0 ||
-      tel.length == 0 ||
       subject.length == 0 ||
       textArea.length == 0
     ) {
@@ -22,19 +20,17 @@ export default function Contact() {
     }
 
 		const templateParams = {
-			from_name: nome,
+			from_name: name,
 			email: email,
-			tel: tel,
 			subject: subject,
 			message: textArea,
 		};
 
-		EmailJSResponseStatus.send('service_4dn3lg8', 'template_0ffmw9q', templateParams, 'kkw6mBNYI30YWH5xu')
+		emailjs.send('service_4dn3lg8', 'template_0ffmw9q', templateParams, 'kkw6mBNYI30YWH5xu')
 		.then((response) => {
 			alert('Envio Realizado com sucesso!')
-			setNome('')
+			setName('')
 			setEmail('')
-			setTel('')
 			setSubject('')
 			setTextArea('')
 		}, (err) => {
@@ -61,8 +57,8 @@ export default function Contact() {
             name="nome"
             placeholder=""
             autoComplete="on"
-            onChange={(e) => setNome(e.target.value)}
-            value={nome}
+            onChange={(e) => setName(e.target.value)}
+            value={name}
           />
           <label htmlFor="name">Nome</label>
         </div>
@@ -78,7 +74,7 @@ export default function Contact() {
             value={email}
           />
           <label htmlFor="email">
-            E-mail <span>(name.mail@e-mail.com)</span>
+            E-mail <span>(name@email.com)</span>
           </label>
         </div>
 

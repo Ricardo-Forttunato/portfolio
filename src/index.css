@@ -10,6 +10,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  /* Variaveis gerais de posicionamento no viewport */
+  --position-tela: absolute;
+  --left-screen: 150px;
+  --top-screen: 2vh;
+  --right-screen: 0;
+  --bottom-screen: 10vh;
+  --box-type: border-box;
+
 }
 
 body {

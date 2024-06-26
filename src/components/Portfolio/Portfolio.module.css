@@ -1,0 +1,9 @@
+.portfolio {
+  border: red 1px solid;
+  position: var(--position-tela);
+  left: var(--left-screen);
+  top: var(--top-screen);
+  right: var(--right-screen) ;
+  bottom: var(--bottom-screen);
+  box-sizing: var(--box-type);
+}

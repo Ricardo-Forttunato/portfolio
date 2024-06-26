@@ -48,6 +48,7 @@
   box-shadow: black 0px 0px 10px;
 }
 
-.list a:active {
-  color: rgb(199, 199, 78)
+.active{
+  background-color: #0e222b;
+  box-shadow: black 0px 0px 10px;
 }
