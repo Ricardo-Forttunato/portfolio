@@ -1,0 +1,53 @@
+.sideBar {
+  width: 150px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+	box-shadow: black 0px 0px 10px;
+}
+
+.list {
+  width: 100%;
+  list-style: none inside;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: start;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 25px auto;
+}
+
+.avatar:hover {
+	box-shadow: black 0px 0px 10px;
+}
+
+.list a {
+	text-decoration: none;
+  font-weight: 500;
+	margin: 15px;
+  padding: 5px;
+	border: #5a5757 1px solid;
+	border-radius: 10px;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.list a:hover {
+	background-color: #0e222b;
+  box-shadow: black 0px 0px 10px;
+}
+
+.list a:active {
+  color: rgb(199, 199, 78)
+}

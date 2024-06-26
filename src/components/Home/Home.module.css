@@ -1,0 +1,9 @@
+.home {
+  border: red 1px solid;
+  position: absolute;
+  left: 150px;
+  top: 2vh;
+  right: 0;
+  bottom: 10vh;
+  box-sizing: border-box;
+}

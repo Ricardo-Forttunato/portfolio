@@ -1,0 +1,28 @@
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5%;
+    box-sizing: border-box;
+}
+
+.footer p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #928d8d;
+    text-shadow: black 10px 5px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+.tradeMark {
+    border-radius: 50%;
+    box-shadow: black 5px 5px 5px;
+}
