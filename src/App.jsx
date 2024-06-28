@@ -7,7 +7,6 @@ import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
-import MainPage from './components/MainPage/MainPage'
 
 function App() {
 
@@ -16,18 +15,15 @@ function App() {
       <BrowserRouter>
         <SideBar />
         <Routes>
-          <Route path='/' element={<MainPage />}>
-            <Route path='/home' element={<Home />}/>
-            <Route path='/about' element={<About />}/>
-            <Route path='/skills' element={<Skills />}/>
-            <Route path='/portfolio' element={<Portfolio />}/>
-            <Route path='/contact' element={<Contact />}/>
-          </Route>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />}/>
+          <Route path='/skills' element={<Skills />}/>
+          <Route path='/portfolio' element={<Portfolio />}/>
+          <Route path='/contact' element={<Contact />}/>
           <Route path='*' element={<div>pagina não encontrada</div>}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
-
     </>
   )
 }

@@ -14,11 +14,10 @@
     font-size: 1rem;
     font-weight: 500;
     font-style: italic;
-    color: #928d8d;
+    color: #aaa2a2;
     text-shadow: black 10px 5px 3px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 7px;
 }
 

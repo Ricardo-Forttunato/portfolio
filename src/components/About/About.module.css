@@ -1,9 +1,79 @@
 .about {
-  border: red 1px solid;
-  position: var(--position-tela);
+  position: var(--position-absolute);
   left: var(--left-screen);
   top: var(--top-screen);
   right: var(--right-screen) ;
   bottom: var(--bottom-screen);
   box-sizing: var(--box-type);
+  display: flex;
+}
+
+.about__content {
+  width: 50%;
+  padding: 1%;
+  color: var(--color-paragraph);
+  border: blue 1px solid;
+}
+
+.hobbie__content {
+  width: 50%;
+  padding: 1%;
+  border: green 1px solid;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container {
+  overflow: scroll;
+}
+
+.container__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: var(--box-type);
+  margin-bottom: 3%;
+}
+
+.paragraph {
+  color: var(--color-paragraph);
+  font-size: 0.9rem;
+  margin: 0 2%;
+  text-align: justify;
+}
+
+blockquote {
+  color: var(--color-blockquote);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0 5%;
+}
+
+.icon {
+  min-width: 60px;
+  height: 100px;
+  padding: 0 1%;
+  color: #b36d1d;
+}
+
+
+/* ----Scrollbar style---- */
+
+.container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #5f6263;
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #0e222b;
+  border-radius: 10px;
 }

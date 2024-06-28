@@ -1,6 +1,6 @@
 .portfolio {
   border: red 1px solid;
-  position: var(--position-tela);
+  position: var(--position-absolute);
   left: var(--left-screen);
   top: var(--top-screen);
   right: var(--right-screen) ;

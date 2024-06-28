@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(202, 188, 188, 0.87);
   background-color: #373a40;
   
   text-rendering: optimizeLegibility;
@@ -13,13 +13,16 @@
 
 
   /* Variaveis gerais de posicionamento no viewport */
-  --position-tela: absolute;
+  --position-absolute: absolute;
   --left-screen: 150px;
   --top-screen: 2vh;
   --right-screen: 0;
   --bottom-screen: 10vh;
   --box-type: border-box;
-
+  --color-text: #c4baba;
+  --color-text-btn: #c4baba;
+  --color-paragraph: #e6e2e2;
+  --color-blockquote: #9bdbd6;
 }
 
 body {

@@ -1,5 +1,5 @@
 .contact {
-  position: var(--position-tela);
+  position: var(--position-absolute);
   left: var(--left-screen);
   top: var(--top-screen);
   right: var(--right-screen) ;
@@ -57,6 +57,7 @@
 .float__textArea {
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .float__field input,
@@ -68,10 +69,12 @@
   background-color: #373a40;
   border: 1px solid #5a5757;
   vertical-align: middle;
+  padding: 12px 10px;
+  box-sizing: border-box;
 }
 
 .form__list input:invalid {
-  box-shadow: 0 0 5px 1px red;
+  box-shadow: 0 0 5px 1px rgb(247, 48, 22);
 }
 
 .float__field input:hover {
@@ -105,28 +108,16 @@
   box-shadow: black 0px 0px 10px;
 }
 
-label {
-  color: #b3b1b1;
-  font-weight: 500;
-  font-style: italic;
-}
-
 /*---- Float Label ----*/
-
-.float__field {
-  position: relative;
-}
-
-.float__field input {
-  padding: 12px 0;
-}
 
 .float__field label {
   position: absolute;
   top: 3px;
   left: 10px;
   pointer-events: none;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
+  color: #a8a6a6;
+  font-weight: 500;
 }
 
 .float__field input:focus + label,
@@ -135,24 +126,20 @@ label {
   font-size: 1rem;
   font-weight: 500;
   color: #a8a6a6;
+  font-style: italic;
 }
 
 /* ------ Float label areaText Field ------ */
 
-.float__textArea {
-  position: relative;
-}
-
-.float__textArea textarea {
-  padding: 12px 0;
-}
-
 .float__textArea label {
   position: absolute;
   top: 3px;
-  left: 10px;
+  left: 1%;
   pointer-events: none;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in-out;
+  color: #a8a6a6;
+  font-weight: 500;
+
 }
 
 .float__textArea textarea:focus + label,
@@ -161,4 +148,5 @@ label {
   font-size: 1rem;
   font-weight: 500;
   color: #a8a6a6;
+  font-style: italic;
 }

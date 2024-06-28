@@ -29,6 +29,7 @@ export default function Contact() {
 		emailjs.send('service_4dn3lg8', 'template_0ffmw9q', templateParams, 'kkw6mBNYI30YWH5xu')
 		.then((response) => {
 			alert('Envio Realizado com sucesso!')
+      console.log('SUCCESS!', response.status, response.text)
 			setName('')
 			setEmail('')
 			setSubject('')
@@ -42,7 +43,7 @@ export default function Contact() {
 		<div className={styles.contact}>
 			<div className={styles.title__content}>
 				<h1 className={styles.title}>Contate-me</h1>
-				<p className={styles.paragraph}>É um prazer recebê-lo em minha página profissional. Estou animado com sua visita e ficaria muito grato em receber seus comentários para ajudar a aprimorar meu trabalho.</p>
+				<p className={styles.paragraph}>É um prazer recebê-lo em minha página profissional. Estou animado com sua visita e ficaria muito grato em receber seus comentários para ajudar a aprimorar meus projetos.</p>
 			</div>
       <form
 				className={styles.form__list}
