@@ -31,6 +31,8 @@
 
 .container {
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 .container__box {
@@ -38,7 +40,20 @@
   flex-direction: row;
   align-items: center;
   box-sizing: var(--box-type);
-  margin-bottom: 3%;
+  padding: 5px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.container__box:hover {
+  background-color: #244150;
+  border-radius: 15px;
+}
+
+.description__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .paragraph {
@@ -46,6 +61,10 @@
   font-size: 0.9rem;
   margin: 0 2%;
   text-align: justify;
+}
+
+.paragraph__deactive {
+  display: none;
 }
 
 blockquote {
@@ -61,6 +80,10 @@ blockquote {
   padding: 0 1%;
   color: #b36d1d;
 }
+
+/* .icon:hover {
+  color: #2b4f61
+} */
 
 
 /* ----Scrollbar style---- */
