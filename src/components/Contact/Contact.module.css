@@ -129,6 +129,13 @@
   font-style: italic;
 }
 
+.float__field input:hover + label {
+  transform: translateY(-25px);
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+
+}
+
 /* ------ Float label areaText Field ------ */
 
 .float__textArea label {
@@ -149,4 +156,11 @@
   font-weight: 500;
   color: #a8a6a6;
   font-style: italic;
+}
+
+.float__textArea textarea:hover + label {
+  transform: translateY(-25px);
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+
 }
