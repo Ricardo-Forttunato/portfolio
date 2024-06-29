@@ -12,9 +12,66 @@
   width: 50%;
   padding: 1%;
   color: var(--color-paragraph);
+  box-sizing: var(--box-type);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
-.hobbie__content {
+.about__container {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.text {
+  font-size: 0.9rem;
+  margin: 2%;
+  text-align: justify;
+}
+
+.about__subtitle {
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text__highlight {
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link__btn {
+  text-decoration: none;
+  font-weight: 500;
+  color: #a8a6a6;
+	margin: 15px;
+  padding: 5px;
+	border: #5a5757 1px solid;
+	border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  width: 6rem;
+}
+
+.link__btn:hover {
+  background-color: #0e222b;
+  box-shadow: black 0px 0px 10px;
+}
+
+/* ---- Hobbies content ----*/
+
+.hobbies__content {
   width: 50%;
   padding: 1%;
   display: flex;
@@ -29,7 +86,7 @@
   text-align: center;
 }
 
-.container {
+.hobbies__container {
   overflow: scroll;
   display: flex;
   flex-direction: column;
@@ -53,25 +110,46 @@
 .description__box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.paragraph {
-  color: var(--color-paragraph);
-  font-size: 0.9rem;
-  margin: 0 2%;
-  text-align: justify;
-}
-
-.paragraph__deactive {
-  display: none;
 }
 
 blockquote {
   color: var(--color-blockquote);
   font-size: 0.8rem;
   font-style: italic;
-  margin: 0 5%;
+  margin: 0 1%;
+}
+
+.paragraph {
+  color: var(--color-paragraph);
+  font-size: 0.9rem;
+  margin: 0 1%;
+  text-align: justify;
+}
+
+.paragraph {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+
+.paragraph__deactive {
+  display: none;
+}
+
+.ellipsis {
+  color: var(--color-paragraph);
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .icon {
@@ -81,27 +159,25 @@ blockquote {
   color: #b36d1d;
 }
 
-/* .icon:hover {
-  color: #2b4f61
-} */
-
-
 /* ----Scrollbar style---- */
-
-.container::-webkit-scrollbar {
+.about__container::-webkit-scrollbar,
+.hobbies__container::-webkit-scrollbar {
   width: 7px;
 }
 
-.container::-webkit-scrollbar-thumb {
+.about__container::-webkit-scrollbar-thumb,
+.hobbies__container::-webkit-scrollbar-thumb {
   background-color: #5f6263;
   border-radius: 10px;
 }
 
-.container::-webkit-scrollbar-corner {
+.about__container::-webkit-scrollbar-corner,
+.hobbies__container::-webkit-scrollbar-corner {
   display: none;
 }
 
-.container::-webkit-scrollbar-thumb:hover {
+.about__container::-webkit-scrollbar-thumb:hover,
+.hobbies__container::-webkit-scrollbar-thumb:hover {
   background-color: #0e222b;
   border-radius: 10px;
 }
