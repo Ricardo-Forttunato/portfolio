@@ -191,7 +191,7 @@ blockquote {
   align-items: center;
   position: relative;
   margin: 0 auto;
-  background-color: #0e222b;
+  background-color: #244150;
   border-radius: 50%;
 }
 
@@ -200,8 +200,9 @@ blockquote {
 .pizzaSlice_three,
 .pizzaSlice_four {
   position: absolute;
-  clip-path: ellipse(100px 100px at 2% 2%);
+  clip-path: ellipse(100px 100px at 1.5% 1.5%);
   color: black;
+  cursor: pointer;
 }
 
 .pizzaSlice_one {
@@ -329,6 +330,8 @@ blockquote {
   right: 95px;
   border-radius: 10px 0 0 10px;
   animation: moveLeft 1s ease-in-out;
+  box-shadow: #8d8989 -5px -5px 1px;
+
 }
 
 .card_two {
@@ -337,6 +340,8 @@ blockquote {
   left: 95px;
   border-radius: 0 10px 10px 0;
   animation: moveRight 1s ease-in-out;
+  transition: 1s ease-in-out;
+  box-shadow: #8d8989 5px -5px 1px;
 }
 
 .card_three {
@@ -345,6 +350,7 @@ blockquote {
   left: 95px;
   border-radius: 0 10px 10px 0;
   animation: moveRight 1s ease-in-out;
+  box-shadow: #8d8989 5px 5px 1px;
 }
 
 .card_four {
@@ -353,6 +359,7 @@ blockquote {
   right: 95px;
   border-radius: 10px 0 0 10px;
   animation: moveLeft 1s ease-in-out;
+  box-shadow: #8d8989 -5px 5px 1px;
 }
 
 .card_deactive {
@@ -362,9 +369,11 @@ blockquote {
 @keyframes moveLeft {
   from {
     transform: translateX(-25px);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
   
 }
