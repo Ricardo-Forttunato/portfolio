@@ -29,7 +29,9 @@
   overflow: scroll;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 1%;
+  height: 100%;
 }
 
 .text {
@@ -87,7 +89,9 @@
   overflow: scroll;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 2% 0;
+  height: 100%;
 }
 
 .container__box {
