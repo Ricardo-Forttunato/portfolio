@@ -1,9 +1,60 @@
 .portfolio {
-  border: red 1px solid;
   position: var(--position-absolute);
   left: var(--left-screen);
   top: var(--top-screen);
   right: var(--right-screen) ;
   bottom: var(--bottom-screen);
   box-sizing: var(--box-type);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mySwiper {
+  width: 90%;
+  height: 90%;
+  background: #;
+}
+
+.swipe54555cr_slide {
+  font-size: 18px;
+  color: var(--color-text);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  max-width: 500px;
+  background-color: rgb(65, 67, 68);
+  box-sizing: var(--box-type);
+  padding: 10px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.swiper_slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.swiper_slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper_slide .text {
+  font-size: 14px;
+  max-width: 500px;
+  line-height: 1.3;
 }
