@@ -15,6 +15,11 @@ export default function About() {
   const [showRpg, setShowRpg] = useState(false)
   const [showGame, setShowGame] = useState(false)
 
+  const [showCardOne, setShowcardOne] = useState(false)
+  const [showCardTwo, setShowcardTwo] = useState(false)
+  const [showCardThree, setShowcardThree] = useState(false)
+  const [showCardFour, setShowcardFour] = useState(false)
+
   function toggleReading() {
     setSshowReading(!showReading) 
   }
@@ -37,32 +42,47 @@ export default function About() {
         <div className={styles.about__content}>
           <h3 className={styles.subtitle}>Sobre Mim</h3>
           <div className={styles.about__container}>
-            {/* <h4 className={styles.about__subtitle}>Apaixonado por tecnologia e em busca   de novos desafios!</h4> */}
             <p className={styles.text}>
               Nos últimos anos, me dediquei ao mundo da tecnologia, me aventurando em linguagens de programação como Python e C# através de cursos e bootcamps online e atualmente estou me especializando em front-end pelo programa ONE - Oracle Next Education na plataforma Alura. Meu objetivo é direcionar minhas experiências e habilidades para a área de Tecnologia da Informação. Sou movido por um desejo constante de evolução, buscando me tornar um profissional completo e atuante no mercado.
               Pretendo utilizar meu aprendizado para criar aplicações inovadoras que contribuam para o aprimoramento do cenário tecnológico atual. Acredito que essa jornada me impulsionará não apenas no meu crescimento profissional, mas também no meu desenvolvimento pessoal.
             </p>
-            <h4 className={styles.about__subtitle}>Algumas das minhas melhores características:</h4>
-            <p className={styles.text}>
-              <span className={styles.text__highlight}>Apaixonado por tecnologia:</span> A busca por conhecimento e inovação me motiva a explorar novos horizontes dentro da área. 
-            </p>
-            
-            <p className={styles.text}>
-              <span className={styles.text__highlight}>Autodidata:</span> Acredito no poder do aprendizado contínuo e me dedico a buscar novas habilidades por meio de cursos, bootcamps e plataformas online.
-            </p>
-            
-            <p className={styles.text}>
-              <span className={styles.text__highlight}>Motivado:</span> Enfrento desafios com entusiasmo e trabalho duro para alcançar meus objetivos.
-            </p>
-            
-            <p className={styles.text}>
-              <span className={styles.text__highlight}>Criativo:</span> Busco soluções inovadoras e fora da caixa para os problemas que encontro.
-            </p>
-            <p className={styles.text}>
-            <span className={styles.text__highlight}>Em constante evolução:</span> Acredito que o aprendizado é um processo contínuo e me dedico a me atualizar com as últimas tendências do mercado.</p>
+            <h4 className={styles.about__subtitle}>Conheça algumas das minhas melhores características:</h4>
+            <div className={styles.pizza}>
+
+              <div className={styles.pizzaSlice_one} onMouseOver={() => setShowcardOne(true)} onMouseOut={() => setShowcardOne(false)}>
+                <h4 className={styles.text_one}>Passion</h4>
+              </div>
+              <div className={showCardOne === true ? styles.card_one : styles.card_deactive} >
+                <p className={styles.card_text}>
+                  <span className={styles.text__highlight}>Apaixonado por tecnologia:</span> <br />A busca por conhecimento e inovação me motiva a explorar novos horizontes dentro da área. 
+                </p>
+              </div>
+
+              <div className={styles.pizzaSlice_two} onMouseOver={() => setShowcardTwo(true)} onMouseOut={() => setShowcardTwo(false)}>
+                <h4 className={styles.text_two}>Learning</h4>
+              </div>
+              <div className={showCardTwo === true ? styles.card_two : styles.card_deactive} >
+                <p className={styles.card_text}><span className={styles.text__highlight}>Autodidata:</span> Acredito no poder do aprendizado contínuo e me dedico a buscar novas habilidades por meio de cursos e bootcamps online.</p>
+              </div>
+
+              <div className={styles.pizzaSlice_three} onMouseOver={() => setShowcardThree(true)} onMouseOut={() => setShowcardThree(false)}>
+                <h4 className={styles.text_three}>Motivation</h4>
+              </div>
+              <div className={showCardThree === true ? styles.card_three : styles.card_deactive} >
+                <p className={styles.card_text}><span className={styles.text__highlight}>Motivado:</span> Enfrento desafios com entusiasmo e trabalho duro para alcançar meus objetivos.</p>  
+              </div>
+
+              <div className={styles.pizzaSlice_four} onMouseOver={() => setShowcardFour(true)} onMouseOut={() => setShowcardFour(false)}>
+                <h4 className={styles.text_four}>Creative</h4>
+              </div>
+              <div className={showCardFour === true ? styles.card_four : styles.card_deactive} >
+                <p className={styles.card_text}><span className={styles.text__highlight}>Criativo:</span> Busco soluções inovadoras e fora da caixa para os problemas que encontro.</p>
+              </div>
+            </div>
+
             <p className={styles.text}>
               Se você busca um profissional dedicado, apaixonado por tecnologia e com sede de conhecimento, entre em contato comigo!
-            </p>
+            </p> 
           </div>
           <Link to="/contact" className={styles.link__btn}>
               <IoMdMail />
