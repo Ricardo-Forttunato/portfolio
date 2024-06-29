@@ -73,6 +73,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .subtitle {
@@ -190,6 +191,8 @@ blockquote {
   align-items: center;
   position: relative;
   margin: 0 auto;
+  background-color: #0e222b;
+  border-radius: 50%;
 }
 
 .pizzaSlice_one,
@@ -206,7 +209,7 @@ blockquote {
   right: 0px;
   width: 110px;
   height: 110px;
-  background-color: #66d174;
+  background-color: #ee5338;
 }
 
 .pizzaSlice_two {
@@ -214,7 +217,7 @@ blockquote {
   left: 0px;
   width: 110px;
   height: 110px;
-  background-color: #ee5338;
+  background-color: #66d174;
   transform: rotate(90deg);
 }
 
@@ -239,21 +242,25 @@ blockquote {
 .pizzaSlice_one:hover {
   box-shadow: #8d8989 -5px -5px 1px;
   margin: -15px;
+  transition: 1s ease-in-out;
 }
 
 .pizzaSlice_two:hover {
   box-shadow: #8d8989 -5px -5px 1px;
   margin: 0 0 -15px -15px;
+  transition: 1s ease-in-out;
 }
 
 .pizzaSlice_three:hover {
   box-shadow: #8d8989 -5px -5px 1px;
   margin: -15px 0 0 -15px;
+  transition: 1s ease-in-out;
 }
 
 .pizzaSlice_four:hover {
   box-shadow: #8d8989 -5px -5px 1px;
   margin: -15px -15px ;
+  transition: 1s ease-in-out;
 }
 
 .text_one {
@@ -288,10 +295,6 @@ blockquote {
   margin: 0;
 }
 
-.card_deactive {
-  display: none;
-}
-
 .text__highlight {
   color: #171718;
   font-size: 0.8rem;
@@ -321,18 +324,19 @@ blockquote {
 }
 
 .card_one {
-  background-color: #66d174;
+  background-color: #ee5338;
   bottom: -7px;
   right: 95px;
   border-radius: 10px 0 0 10px;
-
+  animation: moveLeft 1s ease-in-out;
 }
 
 .card_two {
-  background-color: #ee5338;
+  background-color: #66d174;
   bottom: -7px;
   left: 95px;
   border-radius: 0 10px 10px 0;
+  animation: moveRight 1s ease-in-out;
 }
 
 .card_three {
@@ -340,6 +344,7 @@ blockquote {
   top: -7px;
   left: 95px;
   border-radius: 0 10px 10px 0;
+  animation: moveRight 1s ease-in-out;
 }
 
 .card_four {
@@ -347,4 +352,29 @@ blockquote {
   top: -7px;
   right: 95px;
   border-radius: 10px 0 0 10px;
+  animation: moveLeft 1s ease-in-out;
+}
+
+.card_deactive {
+  display: none;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(-25px);
+  }
+  to {
+    transform: translateX(0);
+  }
+  
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(25px);
+  }
+  to {
+    transform: translateX(0);
+  }
+  
 }

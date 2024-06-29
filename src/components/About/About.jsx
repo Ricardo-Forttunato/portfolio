@@ -15,26 +15,13 @@ export default function About() {
   const [showRpg, setShowRpg] = useState(false)
   const [showGame, setShowGame] = useState(false)
 
-  const [showCardOne, setShowcardOne] = useState(false)
-  const [showCardTwo, setShowcardTwo] = useState(false)
-  const [showCardThree, setShowcardThree] = useState(false)
-  const [showCardFour, setShowcardFour] = useState(false)
-
-
-  function toggleSkating() {
-    setShowSkating(!showSkating) 
-  }
-
-  function toggleRpg() {
-    setShowRpg(!showRpg) 
-  }
-
-  function toggleGame() {
-    setShowGame(!showGame) 
-  }
+  const [showCardPassion, setShowcardPassion] = useState(false)
+  const [showCardSelfTaught, setShowcardSelfTaught] = useState(false)
+  const [showCardMotivation, setShowcardMotivation] = useState(false)
+  const [showCardCreative, setShowcardCreative] = useState(false)
 
   return (
-      <div className={styles.about}>
+      <main className={styles.about}>
 
         <div className={styles.about__content}>
           <h3 className={styles.subtitle}>Sobre Mim</h3>
@@ -45,33 +32,34 @@ export default function About() {
             </p>
             <h4 className={styles.about__subtitle}>Conheça algumas das minhas melhores características:</h4>
             <div className={styles.pizza}>
-              <div className={styles.pizzaSlice_one} onMouseOver={() => setShowcardOne(true)} onMouseOut={() => setShowcardOne(false)}>
-                <h4 className={showCardOne === true ? styles.card_deactive : styles.text_one}>Passion</h4>
+
+              <div className={styles.pizzaSlice_one} onMouseOver={() => setShowcardPassion(true)} onMouseOut={() => setShowcardPassion(false)}>
+                <h4 className={showCardPassion === true ? styles.card_deactive : styles.text_one}>Passion</h4>
               </div>
-              <div className={showCardOne === true ? styles.card_one : styles.card_deactive} >
+              <div className={showCardPassion === true ? styles.card_one : styles.card_deactive} >
                 <p className={styles.card_text}>
                   <span className={styles.text__highlight}>Apaixonado por tecnologia:</span> <br />A busca por conhecimento e inovação me motiva a explorar novos horizontes dentro da área. 
                 </p>
               </div>
 
-              <div className={styles.pizzaSlice_two} onMouseOver={() => setShowcardTwo(true)} onMouseOut={() => setShowcardTwo(false)}>
-                <h4 className={showCardTwo === true ? styles.card_deactive : styles.text_two}>Self-taught</h4>
+              <div className={styles.pizzaSlice_two} onMouseOver={() => setShowcardSelfTaught(true)} onMouseOut={() => setShowcardSelfTaught(false)}>
+                <h4 className={showCardSelfTaught === true ? styles.card_deactive : styles.text_two}>Self-taught</h4>
               </div>
-              <div className={showCardTwo === true ? styles.card_two : styles.card_deactive} >
+              <div className={showCardSelfTaught === true ? styles.card_two : styles.card_deactive} >
                 <p className={styles.card_text}><span className={styles.text__highlight}>Autodidata:</span> Acredito no poder do aprendizado contínuo e me dedico a buscar novas habilidades por meio de cursos e bootcamps online.</p>
               </div>
 
-              <div className={styles.pizzaSlice_three} onMouseOver={() => setShowcardThree(true)} onMouseOut={() => setShowcardThree(false)}>
-                <h4 className={showCardThree === true ? styles.card_deactive : styles.text_three}>Motivation</h4>
+              <div className={styles.pizzaSlice_three} onMouseOver={() => setShowcardMotivation(true)} onMouseOut={() => setShowcardMotivation(false)}>
+                <h4 className={showCardMotivation === true ? styles.card_deactive : styles.text_three}>Motivation</h4>
               </div>
-              <div className={showCardThree === true ? styles.card_three : styles.card_deactive} >
+              <div className={showCardMotivation === true ? styles.card_three : styles.card_deactive} >
                 <p className={styles.card_text}><span className={styles.text__highlight}>Motivado:</span> Enfrento desafios com entusiasmo e trabalho duro para alcançar meus objetivos.</p>  
               </div>
 
-              <div className={styles.pizzaSlice_four} onMouseOver={() => setShowcardFour(true)} onMouseOut={() => setShowcardFour(false)}>
-                <h4 className={showCardFour === true ? styles.card_deactive : styles.text_four}>Creative</h4>
+              <div className={styles.pizzaSlice_four} onMouseOver={() => setShowcardCreative(true)} onMouseOut={() => setShowcardCreative(false)}>
+                <h4 className={showCardCreative === true ? styles.card_deactive : styles.text_four}>Creative</h4>
               </div>
-              <div className={showCardFour === true ? styles.card_four : styles.card_deactive} >
+              <div className={showCardCreative === true ? styles.card_four : styles.card_deactive} >
                 <p className={styles.card_text}><span className={styles.text__highlight}>Criativo:</span> Busco soluções inovadoras e fora da caixa para os problemas que encontro.</p>
               </div>
             </div>
@@ -123,6 +111,6 @@ export default function About() {
             </div>
           </div> 
         </div>
-      </div>
+      </main>
   )
 }
