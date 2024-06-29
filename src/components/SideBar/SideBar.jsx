@@ -8,8 +8,23 @@ import { FaCode } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { BiSolidPhotoAlbum } from "react-icons/bi";
 import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export default function SideBar() {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  });
 
 	const location = useLocation();
 
@@ -21,31 +36,31 @@ export default function SideBar() {
         <Link to="/" className={location.pathname === '/'? styles.active : null}>
           <div className={styles.icon}>
             <GoHomeFill />
-            Home
+            <span className={windowWidth < 650 ? styles.deactive : null}>Home</span>
           </div>
         </Link>
         <Link to="/about" className={location.pathname === '/about'? styles.active : null}>
           <div className={styles.icon} >
             <IoPersonSharp />
-            About
+            <span className={windowWidth < 650 ? styles.deactive : null}>About</span>
           </div>
         </Link>
         <Link to="skills" className={location.pathname === '/skills'? styles.active : null}>
           <div className={styles.icon} >
             <FaCode />
-            Skills<span></span>
+            <span className={windowWidth < 650 ? styles.deactive : null}>Skills</span>
           </div>
         </Link>
         <Link to="portfolio" className={location.pathname === '/portfolio'? styles.active : null}>
           <div className={styles.icon} >
             <BiSolidPhotoAlbum />
-            Portfolio
+            <span className={windowWidth < 650 ? styles.deactive : null}>Portfolio</span>
           </div>
         </Link>
         <Link to="contact" className={location.pathname === '/contact'? styles.active : null}>
           <div className={styles.icon} >
             <IoMdMail />
-            Contact
+            <span className={windowWidth < 650 ? styles.deactive : null}>Contact</span>
           </div>
         </Link>
       </div>

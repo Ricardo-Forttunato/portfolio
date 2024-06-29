@@ -53,3 +53,7 @@
   background-color: #0e222b;
   box-shadow: black 0px 0px 10px;
 }
+
+.deactive {
+  display: none;
+}
