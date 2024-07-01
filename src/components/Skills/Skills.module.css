@@ -6,4 +6,21 @@
   right: var(--right-screen) ;
   bottom: var(--bottom-screen);
   box-sizing: var(--box-type);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px
+}
+
+
+
+.banner {
+  border: red 1px solid;
+  width: 240px;
+}
+
+.icon {
+  font-size: 80px;
+  border: red 1px solid;
 }
