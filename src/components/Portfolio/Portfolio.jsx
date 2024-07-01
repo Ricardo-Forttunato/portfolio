@@ -1,8 +1,6 @@
 import styles from "./Portfolio.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-/*Swiper import CSS Styles */
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -19,7 +17,7 @@ export default function Portfolio() {
 		<Swiper
 			style={{
 				'--swiper-navigation-color': '#0e222b',
-        '--swiper-pagination-color': '#0e222b',
+				'--swiper-pagination-color': '#0e222b',
 			}}
 			speed={600}
 			spaceBetween={30}
@@ -27,16 +25,10 @@ export default function Portfolio() {
 			parallax={true}
 			pagination={{clickable: true}}
 			navigation={true}
-			modules={[Parallax, Pagination, Navigation]}
+			modules={[ Parallax, Pagination, Navigation ]}
 			className={styles.mySwiper}
 		>
-			<div
-				slot="container-start"
-				className={styles.parallax_bg}
-				style={{
-					backgroundImage: "url()",
-				}}
-			></div>
+			<div slot="container-start" className={styles.parallax_bg}></div>
 
 			<SwiperSlide style={{ 
 				backgroundImage: `url(${aboutPage})`, 
