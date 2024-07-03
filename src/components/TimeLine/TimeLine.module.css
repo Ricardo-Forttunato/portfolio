@@ -1,0 +1,42 @@
+.skills_content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.icon_container {
+    display: flex;
+    gap: 5px;
+}
+
+.title {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.icon {
+    display: flex;
+    margin: 0;
+    font-size: 25px;
+    color: #071e46;
+    filter: invert(1);
+}
+
+.certification {
+    margin: 0;
+}
