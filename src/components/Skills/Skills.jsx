@@ -18,7 +18,6 @@ export default function Skills() {
         icon7={content.icon7}
         icon8={content.icon8}
         icon9={content.icon9}
-
         certification={content.certificationUrl}
       />
     )
@@ -47,7 +46,6 @@ export default function Skills() {
             {content2022.map(handleContent)}
           </div>
         </div>
-          {/* -------------------------------------------------------- */}
         <div className={styles.skills_container}>
           <div className={styles.content_reverse}>
             {content2023.map(handleContent)}
@@ -65,7 +63,6 @@ export default function Skills() {
             <div className={`${styles.year_title_reverse} ${styles.title_colorLight}`}>2023</div>
           </div>
         </div>
-          {/* ---------------------------------------------------------------- */}
         <div className={styles.skills_container}>
           <div className={styles.year_container}>
             <div className={`${styles.year_title} ${styles.title_colorDark}`}>2024</div>
