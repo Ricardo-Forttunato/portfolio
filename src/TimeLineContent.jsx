@@ -30,9 +30,7 @@ const content2022 = [
       "https://www.udemy.com/certificate/UC-e072e5b4-3c1d-45a4-9813-f83b4c27df46/",
     icon3: <SiCsharp />,
     icon4: <SiPython />,
-    icon5: <FaJava />,
-    icon6: null,
-    icon7: null,
+    icon5: <FaJava />
   },
   {
     id: 2,
@@ -41,11 +39,7 @@ const content2022 = [
     icon2: <TbCertificate />,
     certificationUrl:
       "https://www.udemy.com/certificate/UC-21b73499-eb8b-49d4-b829-ee3266da0b45/",
-    icon3: <SiCsharp />,
-    icon4: null,
-    icon5: null,
-    icon6: null,
-    icon7: null,
+    icon3: <SiCsharp />
   },
 ];
 
@@ -58,10 +52,7 @@ const content2023 = [
     certificationUrl:
       "https://www.freecodecamp.org/certification/fcca6cff155-5a32-40b1-827d-88ffcb2c099a/responsive-web-design",
     icon3: <FaHtml5 />,
-    icon4: <IoLogoCss3 />,
-    icon5: null,
-    icon6: null,
-    icon7: null,
+    icon4: <IoLogoCss3 />
   },
   {
     id: 4,
@@ -71,10 +62,7 @@ const content2023 = [
     certificationUrl:
       "https://www.udemy.com/certificate/UC-6ae08abf-6768-48b8-90ff-822cd277b99b/",
     icon3: <FaGithub />,
-    icon4: <FaGitAlt />,
-    icon5: null,
-    icon6: null,
-    icon7: null,
+    icon4: <FaGitAlt />
   },
   {
     id: 3,
@@ -83,11 +71,7 @@ const content2023 = [
     icon2: <TbCertificate />,
     certificationUrl:
       "https://www.credly.com/badges/ff6d97c3-2d7a-4325-8d5f-677aefc4885a/",
-    icon3: <SiPython />,
-    icon4: null,
-    icon5: null,
-    icon6: null,
-    icon7: null,
+    icon3: <SiPython />
   },
   {
     id: 2,
@@ -96,11 +80,7 @@ const content2023 = [
     icon2: <TbCertificate />,
     certificationUrl:
       "https://www.credly.com/badges/a8c0be4d-218d-4f69-83d6-e9c7a7c233d3/linked_in_profile",
-    icon3: <FaLaptopCode />,
-    icon4: null,
-    icon5: null,
-    icon6: null,
-    icon7: null,
+    icon3: <FaLaptopCode />
   },
   {
     id: 1,
@@ -110,9 +90,7 @@ const content2023 = [
     certificationUrl: null,
     icon3: <SiCsharp />,
     icon4: <GrMysql />,
-    icon5: <FaLaptopCode />,
-    icon6: null,
-    icon7: null,
+    icon5: <FaLaptopCode />
   },
 ];
 
@@ -138,11 +116,7 @@ const content2024 = [
     icon2: <TbCertificate />,
     certificationUrl:
       "https://www.linkedin.com/in/ricardo-fortunato/details/certifications/1710342741514/single-media-viewer/?profileId=ACoAAES_hi8BuSAn0DpVSa5lk6S5g19qjsU3vFc",
-    icon3: <SiPython />,
-    icon4: null,
-    icon5: null,
-    icon6: null,
-    icon7: null,
+    icon3: <SiPython />
   },
   {
     id: 3,
@@ -169,8 +143,7 @@ const content2024 = [
     icon3: <FaJava />,
     icon4: <FaGithub />,
     icon5: <FaGitAlt />,
-    icon6: <FaLaptopCode />,
-    icon7: null,
+    icon6: <FaLaptopCode />
   },
 ];
 
