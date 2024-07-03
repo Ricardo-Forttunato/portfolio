@@ -46,7 +46,7 @@ export default function About() {
                 <h4 className={showCardSelfTaught === true ? styles.card_deactive : styles.text_two}>Self-taught</h4>
               </div>
               <div className={showCardSelfTaught === true ? styles.card_two : styles.card_deactive} >
-                <p className={styles.card_text}><span className={styles.text__highlight}>Autodidata:</span> Acredito no poder do aprendizado contínuo e me dedico a buscar novas habilidades por meio de cursos e bootcamps online.</p>
+                <p className={styles.card_text}><span className={styles.text__highlight}>Autodidata:</span> Acredito no poder do aprendizado contínuo e me dedico a sempre buscar novas habilidades por meio de cursos e bootcamps online.</p>
               </div>
 
               <div className={styles.pizzaSlice_three} onMouseOver={() => setShowcardMotivation(true)} onMouseOut={() => setShowcardMotivation(false)}>

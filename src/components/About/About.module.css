@@ -2,7 +2,7 @@
   position: var(--position-absolute);
   left: var(--left-screen);
   top: var(--top-screen);
-  right: var(--right-screen) ;
+  right: var(--right-screen);
   bottom: var(--bottom-screen);
   box-sizing: var(--box-type);
   display: flex;
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+}
 
 .subtitle {
   display: flex;
@@ -51,10 +51,10 @@
   text-decoration: none;
   font-weight: 500;
   color: #a8a6a6;
-	margin: 15px;
+  margin: 15px;
   padding: 5px;
-	border: #5a5757 1px solid;
-	border-radius: 10px;
+  border: #5a5757 1px solid;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -140,7 +140,7 @@ blockquote {
   }
   to {
     opacity: 1;
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 }
 
@@ -264,7 +264,7 @@ blockquote {
 
 .pizzaSlice_four:hover {
   box-shadow: #8d8989 -5px -5px 1px;
-  margin: -15px -15px ;
+  margin: -15px -15px;
   transition: 1s ease-in-out;
 }
 
@@ -335,7 +335,6 @@ blockquote {
   border-radius: 10px 0 0 10px;
   animation: moveLeft 1s ease-in-out;
   box-shadow: #8d8989 -5px -5px 1px;
-
 }
 
 .card_two {
@@ -379,7 +378,6 @@ blockquote {
     transform: translateX(0);
     opacity: 1;
   }
-  
 }
 
 @keyframes moveRight {
@@ -391,5 +389,4 @@ blockquote {
     transform: translateX(0);
     opacity: 1;
   }
-  
 }
