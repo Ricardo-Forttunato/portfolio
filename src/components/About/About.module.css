@@ -6,11 +6,15 @@
   bottom: var(--bottom-screen);
   box-sizing: var(--box-type);
   display: flex;
+  flex-wrap: wrap;
+  border: yellow 1px solid;
+  overflow: scroll;
 }
 
 .about__content {
   width: 50%;
   height: 100%;
+  min-width: 500px;
   padding: 0 1%;
   color: var(--color-paragraph);
   box-sizing: var(--box-type);
@@ -71,6 +75,7 @@
 
 .hobbies__content {
   width: 50%;
+  min-width: 500px;
   padding: 0 1%;
   display: flex;
   flex-direction: column;
@@ -163,22 +168,27 @@ blockquote {
 }
 
 /* ----Scrollbar style---- */
+.about::-webkit-scrollbar,
 .about__container::-webkit-scrollbar,
 .hobbies__container::-webkit-scrollbar {
   width: 7px;
+  height: 9px;
 }
 
+.about::-webkit-scrollbar-thumb,
 .about__container::-webkit-scrollbar-thumb,
 .hobbies__container::-webkit-scrollbar-thumb {
   background-color: #5f6263;
   border-radius: 10px;
 }
 
+.about::-webkit-scrollbar-corner,
 .about__container::-webkit-scrollbar-corner,
 .hobbies__container::-webkit-scrollbar-corner {
   display: none;
 }
 
+.about::-webkit-scrollbar-thumb:hover,
 .about__container::-webkit-scrollbar-thumb:hover,
 .hobbies__container::-webkit-scrollbar-thumb:hover {
   background-color: #0e222b;
@@ -186,7 +196,6 @@ blockquote {
 }
 
 /* Estilização da div pizzaSlice */
-
 .pizza {
   min-width: 220px;
   min-height: 220px;
