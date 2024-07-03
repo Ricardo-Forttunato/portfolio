@@ -17,6 +17,7 @@
 
 .skills::-webkit-scrollbar {
   height: 10px;
+  width: 10px;
 }
 
 
@@ -46,6 +47,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .container {
@@ -54,12 +57,14 @@
   justify-content: flex-start;
   max-width: 1350px;
   min-width: 1350px;
-  height: 730px;
   padding: 0 30px;
   box-sizing: var(--box-type);
   position: absolute;
   left: 0;
   bottom: 0;
+  top: 55px;
+  right: 0;
+  margin: 0 auto;
 }
 
 .skills_container {
@@ -145,11 +150,13 @@
 }
 
 .content {
-  height: 250px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .circle {
@@ -231,12 +238,14 @@
 }
 
 .content_reverse {
-  height: 319px;
+  max-height: 320px;
   min-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 15px;
+
 }
 
 .polygon_reverse {
