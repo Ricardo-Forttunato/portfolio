@@ -292,9 +292,10 @@
   border-color: #eeae23;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 670px){
   .skills {
     left: 0;
-    top: 120px  ;
+    top: 120px;
+    bottom: 6vh;
   }
 }

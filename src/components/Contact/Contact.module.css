@@ -165,7 +165,17 @@
 
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 960px){
+  .title__content {
+    width: 80%;
+  }
+
+  .form__list {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 670px){
   .contact {
     left: 0;
     top: 120px  ;

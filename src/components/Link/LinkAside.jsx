@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import styles from './Link.module.css';
 import { Link, useLocation } from "react-router-dom";
@@ -27,7 +28,7 @@ export default function LinkAside(props) {
     >
       <div className={styles.icon}>
         {props.icon}
-        <span className={ windowWidth < 650 ? styles.deactive : null}>{props.text}</span>
+        <span className={ windowWidth < 670 ? styles.deactive : null}>{props.text}</span>
       </div>
     </Link>
   );

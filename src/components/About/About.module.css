@@ -7,7 +7,6 @@
   box-sizing: var(--box-type);
   display: flex;
   flex-wrap: wrap;
-  border: yellow 1px solid;
   overflow: scroll;
 }
 
@@ -407,6 +406,13 @@ blockquote {
 
   .hobbies__content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .about {
+    left: 0;
+    top: 120px;
   }
 }
 
