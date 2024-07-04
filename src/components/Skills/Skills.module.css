@@ -50,8 +50,8 @@
 
 .container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   max-width: 1350px;
   min-width: 1350px;
   padding: 0 30px;
@@ -290,4 +290,11 @@
 
 .eixo_colorLight {
   border-color: #eeae23;
+}
+
+@media screen and (max-width: 650px){
+  .skills {
+    left: 0;
+    top: 120px  ;
+  }
 }

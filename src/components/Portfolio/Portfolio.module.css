@@ -58,3 +58,10 @@
   max-width: 500px;
   line-height: 1.3;
 }
+
+@media screen and (max-width: 650px){
+  .portfolio {
+    left: 0;
+    top: 120px  ;
+  }
+}

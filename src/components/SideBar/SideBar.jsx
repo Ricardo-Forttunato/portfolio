@@ -32,9 +32,11 @@ export default function SideBar() {
 
   return (
     <aside className={styles.sideBar}>
-      <div className={styles.list}>
+      <div className={styles.content}>
         <img src={avatar} alt="avatar" className={styles.avatar} />
-        {linkData.map(renderLinkAside)}
+        <div className={styles.container_links}>
+          {linkData.map(renderLinkAside)}
+        </div>
       </div>
     </aside>
   );

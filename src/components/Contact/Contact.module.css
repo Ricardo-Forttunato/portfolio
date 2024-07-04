@@ -164,3 +164,53 @@
   transition: all 0.3s ease-in-out;
 
 }
+
+@media screen and (max-width: 650px){
+  .contact {
+    left: 0;
+    top: 120px  ;
+  }
+
+  .title__content {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .form__list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .title {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+  }
+  
+  .paragraph {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #b3b1b1;
+    text-align: center;
+    text-align: justify;
+    padding: 0 10px;
+    margin: 0;
+  }
+
+  .form__list {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  .float__field input {
+    height: 30px;
+  }
+
+  .form__list textarea {
+    height: 70px;
+    resize: none;
+  }
+
+
+}

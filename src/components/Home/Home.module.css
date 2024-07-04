@@ -53,15 +53,22 @@
 
 @keyframes changeImg {
   0% {
-    background-image: url('/public/html5-original.svg');
+    background-image: url('/html5-original.svg');
   }
   35% {
-    background-image: url('/public/css3-original.svg');
+    background-image: url('/css3-original.svg');
   }
   65% {
-    background-image: url('/public/javascript-plain.svg');
+    background-image: url('/javascript-plain.svg');
   }
   100% {
-    background-image: url('/public/react-original.svg');
+    background-image: url('/react-original.svg');
+  }
+}
+
+@media screen and (max-width: 650px){
+  .home {
+    left: 0;
+    top: 120px  ;
   }
 }

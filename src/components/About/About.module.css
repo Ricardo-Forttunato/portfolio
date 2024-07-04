@@ -30,12 +30,12 @@
 }
 
 .about__container {
+  height: 100%;
   overflow: scroll;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1%;
-  height: 100%;
 }
 
 .text {
@@ -91,12 +91,12 @@
 }
 
 .hobbies__container {
+  height: 100%;
   overflow: scroll;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   margin: 2% 0;
-  height: 100%;
 }
 
 .container__box {
@@ -397,5 +397,128 @@ blockquote {
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .about__content {
+    width: 100%;
+  }
+
+  .hobbies__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    left: 0;
+    top: 120px;
+  }
+
+  .about__content {
+    width: 100%;
+    min-width: 300px;
+    padding: 0 1%;
+  }
+
+  .about__container {
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+
+  .about__subtitle {
+    font-size: 0.7rem;
+    margin: 1% 0;
+  }
+
+  .text {
+    font-size: 0.7rem;
+  }
+
+  .hobbies__content {
+    width: 100%;
+    min-width: 320px;
+    padding: 0 1%;
+  }
+
+  .paragraph,
+  .paragraph__deactive {
+    font-size: 0.7rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .link__btn {
+    display: none;
+  }
+
+  .card_text {
+    font-size: 0.7rem;
+  }
+
+  .card_one,
+  .card_two,
+  .card_three,
+  .card_four {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about__container {
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .about__subtitle {
+    font-size: 0.6rem;
+    margin: 1% 0;
+  }
+
+  .text {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__container {
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .about__subtitle {
+    font-size: 0.5rem;
+    margin: 1% 0;
+  }
+
+  .text {
+    font-size: 0.5rem;
+  }
+
+  .description__box blockquote {
+    font-size: 0.6rem;
+  }
+
+  .paragraph,
+  .paragraph__deactive {
+    font-size: 0.6rem;
   }
 }
