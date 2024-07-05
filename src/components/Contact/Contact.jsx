@@ -43,7 +43,7 @@ export default function Contact() {
 		<div className={styles.contact}>
 			<div className={styles.title__content}>
 				<h1 className={styles.title}>Contate-me</h1>
-				<p className={styles.paragraph}>É um prazer recebê-lo em minha página profissional. Estou animado com sua visita e ficaria muito grato em receber seus comentários para ajudar a aprimorar meus projetos.</p>
+				<p className={styles.paragraph}>Olá! seja bem vinda(o). É um prazer receber sua visita em minha página profissional.  Estou sempre buscando maneiras de melhorar meus projetos e seu feedback é essencial para isso e adoraria ouvir sua opinião. Diga-me o que você achou e se precisar de um site novo ou quiser melhorar a interface do seu site atual também ofereço serviços de desenvolvimento para empresas e profissionais. Envie sua opinião e aproveite para solicitar um orçamento gratuito. </p>
 			</div>
       <form
 				className={styles.form__list}
