@@ -38,7 +38,7 @@
 }
 
 .text {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin: 2%;
   text-align: justify;
 }
@@ -121,31 +121,17 @@
 
 blockquote {
   color: var(--color-blockquote);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: italic;
   margin: 0 1%;
 }
 
 .paragraph {
   color: var(--color-paragraph);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 1%;
   text-align: justify;
-}
-
-.paragraph {
   animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }
 
 .paragraph__deactive {
@@ -157,6 +143,17 @@ blockquote {
   font-size: 1rem;
   margin: 0 auto;
   padding: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .icon {
@@ -453,9 +450,14 @@ blockquote {
     padding: 0 1%;
   }
 
+  blockquote {
+    font-size: 0.8rem;
+    margin: 0 1%;
+  }
+
   .paragraph,
   .paragraph__deactive {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .icon {
@@ -496,6 +498,11 @@ blockquote {
 
   .text {
     font-size: 0.6rem;
+  }
+
+  blockquote {
+    font-size: 0.7rem;
+    margin: 0 1%;
   }
 }
 
