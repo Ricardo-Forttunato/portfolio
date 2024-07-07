@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -32,10 +32,5 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url('/image/homeBackground-reverse.png');
-  background-repeat: no-repeat;
-  background-size: 60% 100%;
-  background-position-x: 99%;
-
 }
 
