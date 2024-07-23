@@ -26,31 +26,28 @@
 }
 
 .content {
-  flex: 1;
-  width: 100%;
   color: var(--color-text);
   font-size: 1.5rem;
   font-weight: 500;
   padding: 1%;
   box-sizing: border-box;
-  margin-top: 40px;
-  padding: 0;
+  /* margin-top: 40px; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
 .social_media {
   position: absolute;
-  width: 250px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 5px;
   box-sizing: border-box;
-  margin: 0;
+  margin: 10px;
   padding-bottom: 0;
   top: 0;
   right: 0;
+  border: red 1px solid;
 }
 
 .icon {
@@ -65,7 +62,7 @@
   flex-direction: column;
   position: relative;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .title > h2,
@@ -78,7 +75,7 @@
 }
 
 .title > h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -125,36 +122,68 @@
 .working {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
   color: var(--color-text);
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 2%;
   box-sizing: border-box;
-  margin-top: 40px;
-  padding: 0;
-  border: red 1px solid;
+  padding: 25px 40px;
 }
 
 .container_left {
-  width: 500px;
-  min-height: 550px;
-  padding: 15px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+
+.github_stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border: blue 1px solid;
 }
 
-.container_left > p {
+.github_stats img {
+}
+
+.container_left h4 {
+  margin: 0;
+  padding: 0 35px;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.container_left div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container_left p {
+  width: 100%;
+  margin: 0;
+  padding: 0 35px;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .container_right {
   width: 500px;
   text-align: center;
-  border: green 1px solid;
 }
 
 .list_container {
@@ -172,8 +201,14 @@
   flex-direction: column;
   align-items: center;
   padding: 0 18px;
-  scroll-snap-align: center;
   margin-bottom: 15px;
+  scroll-snap-align: center;
+}
+
+.card_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 .sample {
@@ -190,7 +225,6 @@
 .list_container::-webkit-scrollbar {
   height: 8px;
   width: 8px;
-
 }
 
 .list_container::-webkit-scrollbar-thumb,

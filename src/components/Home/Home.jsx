@@ -4,15 +4,11 @@ import styles from "./Home.module.css";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
 import { FaFacebookSquare } from "react-icons/fa";
-import { IoIosPaper } from "react-icons/io";
-import { useEffect, useState } from "react";
 
 /*--- End Import icons ---*/
 
 export default function Home() {
-
   return (
     <main className={styles.home}>
       <div className={styles.container}>
@@ -26,17 +22,19 @@ export default function Home() {
         </div>
         <div className={styles.working}>
           <div className={styles.container_left}>
-            <p>
-              Sou um desenvolvedor front-end em crescimento profissional com
-              experiencia em HTML5, CSS3, Javascript, bibioteca React e Frameworks como
-              bootstrap e Sass e também ofereço meus serviços para profissionais
-              e empresas.
-            </p>
+            <img
+              height="200em"
+              src="https://github-readme-stats.vercel.app/api/top-langs?username=Ricardo-Forttunato&layout=donut&langs=count=16&show_icons=true&bg_color=00000000&theme=onedark"
+            />
+            <img
+              height="200em"
+              src="https://github-readme-stats.vercel.app/api?username=Ricardo-Forttunato&show_icons=true&bg_color=00000000&theme=onedark"
+            />
           </div>
           <div className={styles.container_right}>
             <ul className={styles.list_container}>
               <li>
-                <p className={styles.card_title}>Sites Vitrine</p>
+                <h3 className={styles.card_title}>Sites Vitrine</h3>
                 <img src="image/vitrineSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
