@@ -1,8 +1,20 @@
-# React + Vite
+# Portfolio João Ricardo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Essa pagina web fornece informações sobre meu trabalho.
 
-Currently, two official plugins are available:
+a pagina foi contruida em react e vitejs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para o deselevolvimento foi utilizado algumas tecnologias como:
+
+- React
+- Vitejs
+- react-router-dom
+-swiperjs
+-emailjs
+
+## 
+
+## Licença
+
+Distribuido sob a licença MIT License. Veja `LICENSE` para mais informações.
+
