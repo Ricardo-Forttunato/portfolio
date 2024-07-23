@@ -37,43 +37,43 @@ export default function Home() {
             <ul className={styles.list_container}>
               <li>
                 <p className={styles.card_title}>Sites Vitrine</p>
-                <img src="public/image/vitrineSample.png" alt="" className={styles.sample}/>
+                <img src="image/vitrineSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>Landing pages</p>
-                <img src="public/image/landingPageSample.png" alt="" className={styles.sample}/>
+                <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>Portfolios</p>
-                <img src="public/image/portfolioSample.png" alt="" className={styles.sample}/>
+                <img src="image/portfolioSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>Blogs</p>
-                <img src="public/image/blogSample.png" alt="" className={styles.sample}/>
+                <img src="image/blogSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>Site de Noticias</p>
-                <img src="public/image/noticiasSample.png" alt="" className={styles.sample}/>
+                <img src="image/noticiasSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>SPA</p>
-                <img src="public/image/landingPageSample.png" alt="" className={styles.sample}/>
+                <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>PWA</p>
-                <img src="public/image/landingPageSample.png" alt="" className={styles.sample}/>
+                <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>Members WebSites</p>
-                <img src="public/image/landingPageSample.png" alt="" className={styles.sample}/>
+                <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>DashBoards</p>
-                <img src="public/image/dashBoardSample.png" alt="" className={styles.sample}/>
+                <img src="image/dashBoardSample.png" alt="" className={styles.sample}/>
               </li>
               <li>
                 <p className={styles.card_title}>Lojas Virtuais</p>
-                <img src="public/image/landingPageSample.png" alt="" className={styles.sample}/>
+                <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
               </li>
             </ul>
           </div>
