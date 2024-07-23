@@ -26,9 +26,7 @@ export default function Skills() {
   return (
     <main className={styles.skills}>
 
-      <h1 className={styles.title}>Skills Learning Timeline</h1>
       <div className={styles.container}>
-
         <div className={styles.skills_container}>
           <div className={styles.year_container}>
             <div className={styles.year_title}>2022</div>
@@ -82,6 +80,8 @@ export default function Skills() {
           </div>
         </div>
       </div>
+      <h1 className={styles.title}>Skills Learning Timeline</h1>
+      
     </main>
   );
 }
