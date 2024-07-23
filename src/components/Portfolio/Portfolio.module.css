@@ -12,8 +12,8 @@
 
 .mySwiper {
   width: 90%;
+  max-width: 1330px;
   height: 90%;
-  /* background: #; */
 }
 
 .swipe54555cr_slide {
@@ -45,7 +45,7 @@
 }
 
 .swiper_slide .title {
-  font-size: 41px;
+  font-size: 31px;
   font-weight: 300;
 }
 
@@ -63,6 +63,5 @@
   .portfolio {
     left: 0;
     top: 120px;
-    bottom: 6vh;
   }
 }

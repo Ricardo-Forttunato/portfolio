@@ -7,8 +7,14 @@ import 'swiper/css/pagination';
 
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 
-import aboutPage from "/image/personal-webpage-about.png"
-import marceloPage from "/image/marcelo-web-page.png"
+import portfolio from "/image/portfolio.png"
+import candidatoPage from "/image/candidatoSPA.png"
+import aluraFlix from "/image/aluraFlix.png"
+import aluraGeek from "/image/aluraGeek.png"
+import cineTag from "/image/cineTag.png"
+import organo from "/image/organo.png"
+import xyz from "/image/xyz.png"
+
 
 export default function Portfolio() {
 
@@ -31,9 +37,10 @@ export default function Portfolio() {
 			<div slot="container-start" className={styles.parallax_bg}></div>
 
 			<SwiperSlide style={{ 
-				backgroundImage: `url(${aboutPage})`, 
+				backgroundImage: `url(${portfolio})`, 
 				backgroundPosition: 'center top',
-				backgroundSize: 'cover'
+				backgroundRepeat: 'no-repeat',
+				backgroundSize: '100% 100%'
 			}} 
 				className={styles.swiper_slide}>
 				<div className={styles.card}>
@@ -45,9 +52,10 @@ export default function Portfolio() {
 				</div>
 			</SwiperSlide>
 			<SwiperSlide style={{ 
-				backgroundImage: `url(${marceloPage})`, 
+				backgroundImage: `url(${candidatoPage})`, 
 				backgroundPosition: 'center top',
-				backgroundSize: 'cover'
+				backgroundRepeat: 'no-repeat',
+				backgroundSize: '100% 100%'
 			}} className={styles.swiper_slide}>
 				<div className={styles.card}>
 					<div className={styles.title} data-swiper-parralax='-300'>Slide 2</div>
@@ -57,9 +65,80 @@ export default function Portfolio() {
 					</div>
 				</div>
 			</SwiperSlide>
-			<SwiperSlide style={{ backgroundImage: `url()` }} className={styles.swiper_slide}>
+			<SwiperSlide 
+				style={{ 
+					backgroundImage: `url(${aluraFlix})`,
+					backgroundPosition: 'center top',
+					backgroundRepeat: 'no-repeat',
+					backgroundSize: '100% 100%'
+				}} 
+				className={styles.swiper_slide}>
 				<div className={styles.card}>
 					<div className={styles.title} data-swiper-parralax='-300'>Slide 3</div>
+					<div className={styles.sutitle} data-swiper-parralax='-200'>Subtitle</div>
+					<div className={styles.text} data-swiper-parralax='-100'>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide 
+				style={{ 
+					backgroundImage: `url(${cineTag})`,
+					backgroundPosition: 'center top',
+					backgroundRepeat: 'no-repeat',
+					backgroundSize: '100% 100%'
+				}} 
+				className={styles.swiper_slide}>
+				<div className={styles.card}>
+					<div className={styles.title} data-swiper-parralax='-300'>Slide 4</div>
+					<div className={styles.sutitle} data-swiper-parralax='-200'>Subtitle</div>
+					<div className={styles.text} data-swiper-parralax='-100'>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide 
+				style={{ 
+					backgroundImage: `url(${aluraGeek})`,
+					backgroundPosition: 'center top',
+					backgroundRepeat: 'no-repeat',
+					backgroundSize: '100% 100%'
+				}} 
+				className={styles.swiper_slide}>
+				<div className={styles.card}>
+					<div className={styles.title} data-swiper-parralax='-300'>Slide 5</div>
+					<div className={styles.sutitle} data-swiper-parralax='-200'>Subtitle</div>
+					<div className={styles.text} data-swiper-parralax='-100'>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide 
+				style={{ 
+					backgroundImage: `url(${organo})`,
+					backgroundPosition: 'center top',
+					backgroundRepeat: 'no-repeat',
+					backgroundSize: '100% 100%'
+				}} 
+				className={styles.swiper_slide}>
+				<div className={styles.card}>
+					<div className={styles.title} data-swiper-parralax='-300'>Slide 6</div>
+					<div className={styles.sutitle} data-swiper-parralax='-200'>Subtitle</div>
+					<div className={styles.text} data-swiper-parralax='-100'>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide 
+				style={{ 
+					backgroundImage: `url(${xyz})`,
+					backgroundPosition: 'center top',
+					backgroundRepeat: 'no-repeat',
+					backgroundSize: '100% 100%'
+				}} 
+				className={styles.swiper_slide}>
+				<div className={styles.card}>
+					<div className={styles.title} data-swiper-parralax='-300'>Slide 7</div>
 					<div className={styles.sutitle} data-swiper-parralax='-200'>Subtitle</div>
 					<div className={styles.text} data-swiper-parralax='-100'>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
