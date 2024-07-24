@@ -5,8 +5,15 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
-
 /*--- End Import icons ---*/
+
+/*--- Start Import Swiper ----*/
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Parallax, Pagination, Navigation } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+/*---- End Import Swiper ----*/ 
 
 export default function Home() {
   return (
@@ -32,48 +39,58 @@ export default function Home() {
             />
           </div>
           <div className={styles.container_right}>
-            <ul className={styles.list_container}>
-              <li>
+            <Swiper
+              style={{
+                '--swiper-navigation-color': '#c99526',
+                '--swiper-pagination-color': '#c99526',
+              }}
+              modules={[ Parallax, Pagination, Navigation ]}
+              speed={600}
+              spaceBetween={30}
+              loop={true}
+              parallax={true}
+              pagination={{clickable: true}}
+              navigation={true}
+            >
+              <div slot="container-start" className={styles.parallax_bg}></div>
+
+              <SwiperSlide>
                 <h3 className={styles.card_title}>Sites Vitrine</h3>
                 <img src="image/vitrineSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>Landing pages</p>
                 <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>Portfolios</p>
                 <img src="image/portfolioSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>Blogs</p>
                 <img src="image/blogSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>Site de Noticias</p>
                 <img src="image/noticiasSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>SPA</p>
                 <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>PWA</p>
                 <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
-                <p className={styles.card_title}>Members WebSites</p>
-                <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>DashBoards</p>
                 <img src="image/dashBoardSample.png" alt="" className={styles.sample}/>
-              </li>
-              <li>
+              </SwiperSlide>
+              <SwiperSlide>
                 <p className={styles.card_title}>Lojas Virtuais</p>
                 <img src="image/landingPageSample.png" alt="" className={styles.sample}/>
-              </li>
-            </ul>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
         <div className={styles.social_media}>
