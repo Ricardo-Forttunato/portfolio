@@ -2,15 +2,15 @@
 
 Essa pagina web fornece informações sobre meu trabalho.
 
-a pagina foi contruida em react e vitejs.
+a pagina foi contruida em vitejs React.
 
 Para o deselevolvimento foi utilizado algumas tecnologias como:
 
-- React
-- Vitejs
-- react-router-dom
--swiperjs
--emailjs
+* React
+* Vitejs
+* react-router-dom
+* swiperjs
+* emailjs
 
 ## 
 
