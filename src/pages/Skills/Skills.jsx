@@ -1,5 +1,5 @@
 import styles from "./Skills.module.css";
-import TimeLine from "../TimeLine/TimeLine";
+import TimeLine from "../../components/TimeLine/TimeLine";
 import { content2022, content2023, content2024 } from "../../TimeLineContent";
 
 export default function Skills() { 

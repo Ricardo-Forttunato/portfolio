@@ -1,5 +1,5 @@
 import styles from "./SideBar.module.css";
-import avatar from "/image/avatar.jpg";
+import avatar from "/public/image/avatar.jpg";
 import LinkAside from "../Link/LinkAside";
 
 /*---- Icons Import ----*/

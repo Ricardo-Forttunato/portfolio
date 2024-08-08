@@ -1,7 +1,5 @@
 import styles from "./Portfolio.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slides from "../Slides/Slides";
-import slides from "../../SlidesContent.jsx";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -20,21 +18,8 @@ import xyz from "/image/xyz.png"
 
 export default function Portfolio() {
 
-	// function handleContent(content) {
-	// 	return(
-	// 		<Slides 
-	// 			key={content.id}
-	// 			imagem={content.imagem}
-	// 			id={content.id}
-	// 			subtitle={content.subtitle}
-	// 			text={content.text}
-	// 		/>
-	// 	)
-	// }
-
 	return (
 		<main className={styles.portfolio}>
-			{/* {slides.map(handleContent)} */}
 			<Swiper
 				style={{
 					'--swiper-navigation-color': '#c99526',
@@ -161,5 +146,6 @@ export default function Portfolio() {
 					</div>
 				</SwiperSlide>							
 			</Swiper>
-		</main>)
+		</main>
+	)
 }
