@@ -15,6 +15,7 @@ export default function About() {
   const [showRpg, setShowRpg] = useState(false)
   const [showGame, setShowGame] = useState(false)
 
+  // const [showCard, setShowcard] = useState(false)
   const [showCardPassion, setShowcardPassion] = useState(false)
   const [showCardSelfTaught, setShowcardSelfTaught] = useState(false)
   const [showCardMotivation, setShowcardMotivation] = useState(false)
@@ -27,12 +28,12 @@ export default function About() {
           <h3 className={styles.subtitle}>Sobre Mim</h3>
           <div className={styles.about__container}>
             <p className={styles.text}>
-              Nos últimos anos, me dediquei ao mundo da tecnologia, me aventurando em linguagens de programação como Python e C# através de cursos e bootcamps online e atualmente estou me especializando em front-end pelo programa ONE - Oracle Next Education na plataforma Alura. Meu objetivo é direcionar minhas experiências e habilidades para a área de Tecnologia da Informação. Sou movido por um desejo constante de evolução, buscando me tornar um profissional completo e atuante no mercado.
+              Nos últimos anos, me dediquei ao mundo da tecnologia, me aventurando em linguagens de programação como Python e C# através de cursos e bootcamps online e atualmente finalizei minha especialização em front-end atraves do programa ONE (Oracle Next Education). Meu objetivo é direcionar minhas experiências e habilidades para a área de Tecnologia da Informação. Sou movido por um desejo constante de evolução, buscando me tornar um profissional completo e atuante no mercado.
               Pretendo utilizar meu aprendizado para criar aplicações inovadoras que contribuam para o aprimoramento do cenário tecnológico atual. Acredito que essa jornada me impulsionará não apenas no meu crescimento profissional, mas também no meu desenvolvimento pessoal.
             </p>
             <h4 className={styles.about__subtitle}>Conheça algumas das minhas melhores características:</h4>
-            <div className={styles.pizza}>
 
+            <div className={styles.pizza}>
               <div className={styles.pizzaSlice_one} onMouseOver={() => setShowcardPassion(true)} onMouseOut={() => setShowcardPassion(false)}>
                 <h4 className={showCardPassion === true ? styles.card_deactive : styles.text_one}>Passion</h4>
               </div>

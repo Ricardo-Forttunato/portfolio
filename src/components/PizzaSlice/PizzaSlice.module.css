@@ -1,0 +1,68 @@
+.text__highlight {
+    color: #171718;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card_text {
+    font-size: 0.9rem;
+    color: #171718;
+    text-align: center;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.card_one,
+.card_two,
+.card_three,
+.card_four {
+  width: 250px;
+  height: 102px;
+  z-index: 3;
+  position: absolute;
+  box-sizing: var(--box-type);
+  display: flex;
+  align-items: center;
+}
+
+.card_one {
+  background-color: #ee5338;
+  bottom: -7px;
+  right: 95px;
+  border-radius: 10px 0 0 10px;
+  animation: moveLeft 1s ease-in-out;
+  box-shadow: #8d8989 -5px -5px 1px;
+}
+
+.card_two {
+  background-color: #66d174;
+  bottom: -7px;
+  left: 95px;
+  border-radius: 0 10px 10px 0;
+  animation: moveRight 1s ease-in-out;
+  transition: 1s ease-in-out;
+  box-shadow: #8d8989 5px -5px 1px;
+}
+
+.card_three {
+  background-color: #6387e9;
+  top: -7px;
+  left: 95px;
+  border-radius: 0 10px 10px 0;
+  animation: moveRight 1s ease-in-out;
+  box-shadow: #8d8989 5px 5px 1px;
+}
+
+.card_four {
+  background-color: #e9b658;
+  top: -7px;
+  right: 95px;
+  border-radius: 10px 0 0 10px;
+  animation: moveLeft 1s ease-in-out;
+  box-shadow: #8d8989 -5px 5px 1px;
+}
+
+.card_deactive {
+  display: none;
+}
