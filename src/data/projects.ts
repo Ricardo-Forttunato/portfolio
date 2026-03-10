@@ -1,13 +1,13 @@
 import type { ProjectItem } from '../types/portfolio';
 
 // import images
-import organoImg from '../../public/image/organo.png';
-import aluraGeekImg from '../../public/image/alura-geek.png';
-import aluraFlixImg from '../../public/image/alura-flix.png';
-import candidatoSPAImg from '../../public/image/spa-gov.png';
-import portfolioImg from '../../public/image/portfolio.png';
-import fungiFindersImg from '../../public/image/fungi-finders.png';
-import dashboardHighlightsImg from '../../public/image/dashboard-highlights.png';
+import organoImg from "../assets/organo.png";
+import aluraGeekImg from "../assets/alura-geek.png";
+import aluraFlixImg from "../assets/alura-flix.png";
+import candidatoSPAImg from "../assets/spa-gov.png";
+import portfolioImg from "../assets/portfolio.png";
+import fungiFindersImg from "../assets/fungi-finders.png";
+import dashboardHighlightsImg from "../assets/dashboard-highlights.png";
 
 export const projects: ProjectItem[] = [
   {
