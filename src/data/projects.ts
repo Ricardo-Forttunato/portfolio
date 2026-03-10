@@ -1,5 +1,14 @@
 import type { ProjectItem } from '../types/portfolio';
 
+// import images
+import organoImg from '../../public/image/organo.png';
+import aluraGeekImg from '../../public/image/alura-geek.png';
+import aluraFlixImg from '../../public/image/alura-flix.png';
+import candidatoSPAImg from '../../public/image/spa-gov.png';
+import portfolioImg from '../../public/image/portfolio.png';
+import fungiFindersImg from '../../public/image/fungi-finders.png';
+import dashboardHighlightsImg from '../../public/image/dashboard-highlights.png';
+
 export const projects: ProjectItem[] = [
   {
     id: 1,
@@ -26,7 +35,7 @@ export const projects: ProjectItem[] = [
         en: "Real-time registration and display flow",
       },
     ],
-    image: "/image/organo.png",
+    image: organoImg,
     repoUrl: "https://github.com/Ricardo-Forttunato",
   },
   {
@@ -54,7 +63,7 @@ export const projects: ProjectItem[] = [
         en: "Responsive UI for desktop and mobile",
       },
     ],
-    image: "/image/alura-geek.png",
+    image: aluraGeekImg,
     repoUrl: "https://github.com/Ricardo-Forttunato",
   },
   {
@@ -82,7 +91,7 @@ export const projects: ProjectItem[] = [
         en: "Structure prepared to scale new content",
       },
     ],
-    image: "/image/alura-flix.png",
+    image: aluraFlixImg,
     repoUrl: "https://github.com/Ricardo-Forttunato",
   },
   {
@@ -110,7 +119,7 @@ export const projects: ProjectItem[] = [
         en: "Design focused on fast information scanning",
       },
     ],
-    image: "/image/spa-gov.png",
+    image: candidatoSPAImg,
     repoUrl: "https://github.com/Ricardo-Forttunato",
   },
   {
@@ -138,7 +147,7 @@ export const projects: ProjectItem[] = [
         en: "Data structure designed for maintenance and growth",
       },
     ],
-    image: "/image/portfolio.png",
+    image: portfolioImg,
     liveUrl: "https://portfolio-orcin-eight-77.vercel.app/",
     repoUrl: "https://github.com/Ricardo-Forttunato/portfolio",
   },
@@ -167,7 +176,7 @@ export const projects: ProjectItem[] = [
         en: "Fully responsive layout with HTML5 semantics and accessibility best practices",
       },
     ],
-    image: "/image/fungi-finders.png",
+    image: fungiFindersImg,
     liveUrl: "https://fungi-finders-front-end-master.vercel.app/",
     repoUrl:
       "https://github.com/Ricardo-Forttunato/Fungi-Finders-Front-endMaster",
@@ -197,7 +206,7 @@ export const projects: ProjectItem[] = [
         en: "Performance optimization for factory terminals and mobile devices",
       },
     ],
-    image: "/image/dashboard-highlights.png",
+    image: dashboardHighlightsImg,
     // liveUrl: '/',
     repoUrl: "https://github.com/Ricardo-Forttunato",
   },
