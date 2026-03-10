@@ -1,0 +1,160 @@
+.page {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero {
+  border: 1px solid var(--border-soft);
+  border-radius: 24px;
+  padding: clamp(1.25rem, 2vw, 2.5rem);
+  background:
+    radial-gradient(circle at 85% 12%, rgba(241, 196, 15, 0.2) 0%, rgba(241, 196, 15, 0) 38%),
+    linear-gradient(120deg, #1f2533 0%, #141b29 100%);
+  box-shadow: var(--elevation-1);
+  animation: reveal 0.75s ease both;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.hero h2 {
+  margin: 0.75rem 0 1rem;
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3vw, 3.2rem);
+  line-height: 1.04;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--text-muted);
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.05rem;
+  font-weight: 600;
+}
+
+.primaryBtn {
+  background: var(--accent-strong);
+  color: #17151a;
+}
+
+.secondaryBtn {
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  color: var(--text-main);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metrics article {
+  background: var(--surface-1);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.metrics strong {
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+}
+
+.metrics span {
+  color: var(--text-muted);
+}
+
+.featured h3 {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+.cards {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  background: var(--surface-1);
+  transition: transform 0.24s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card div {
+  padding: 0.9rem;
+}
+
+.card span {
+  color: var(--accent-strong);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card h4 {
+  margin: 0.4rem 0 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.93rem;
+  color: var(--text-muted);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 980px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}

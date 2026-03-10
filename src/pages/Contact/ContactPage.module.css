@@ -1,0 +1,73 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.copy,
+.form {
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  padding: 1.2rem;
+  background: var(--surface-1);
+}
+
+.copy p:first-child {
+  margin: 0;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+}
+
+.copy h2 {
+  margin: 0.6rem 0 0.8rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.copy p {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.form input,
+.form textarea {
+  border: 1px solid var(--border-soft);
+  background: #121724;
+  color: var(--text-main);
+  border-radius: 10px;
+  padding: 0.65rem;
+}
+
+.form button {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent-strong);
+  color: #17151a;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 920px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}
