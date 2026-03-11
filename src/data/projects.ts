@@ -13,8 +13,8 @@ export const projects: ProjectItem[] = [
   {
     id: 1,
     title: { pt: "Organo", en: "Organo" },
-    year: 2022,
-    period: { pt: "Q4 2022", en: "Q4 2022" },
+    year: 2024,
+    period: { pt: "Q2 2024", en: "Q2 2024" },
     role: { pt: "Frontend Developer", en: "Frontend Developer" },
     description: {
       pt: "Aplicacao para organizacao de times com cadastro de colaboradores e renderizacao dinamica de cards.",
@@ -36,69 +36,13 @@ export const projects: ProjectItem[] = [
       },
     ],
     image: organoImg,
-    repoUrl: "https://github.com/Ricardo-Forttunato",
+    repoUrl: "https://github.com/Ricardo-Forttunato/organo-project",
   },
   {
     id: 2,
-    title: { pt: "Alura Geek", en: "Alura Geek" },
-    year: 2023,
-    period: { pt: "Q2 2023", en: "Q2 2023" },
-    role: { pt: "Frontend Developer", en: "Frontend Developer" },
-    description: {
-      pt: "E-commerce de produtos geek com formulario de cadastro, vitrine e experiencia focada em usabilidade.",
-      en: "Geek product e-commerce with registration form, storefront, and usability-focused experience.",
-    },
-    stack: ["React", "JavaScript", "CSS", "REST API"],
-    highlights: [
-      {
-        pt: "Criacao de fluxo de cadastro de produtos",
-        en: "Product registration workflow implementation",
-      },
-      {
-        pt: "Organizacao de estados para listagem e filtros",
-        en: "State organization for listing and filters",
-      },
-      {
-        pt: "UI responsiva para desktop e mobile",
-        en: "Responsive UI for desktop and mobile",
-      },
-    ],
-    image: aluraGeekImg,
-    repoUrl: "https://github.com/Ricardo-Forttunato",
-  },
-  {
-    id: 3,
-    title: { pt: "AluraFlix", en: "AluraFlix" },
-    year: 2023,
-    period: { pt: "Q4 2023", en: "Q4 2023" },
-    role: { pt: "Frontend Developer", en: "Frontend Developer" },
-    description: {
-      pt: "Plataforma de catalogo de videos com destaque de categorias e foco em arquitetura de componentes.",
-      en: "Video catalog platform with category highlights and component architecture focus.",
-    },
-    stack: ["React", "JavaScript", "Styled UI"],
-    highlights: [
-      {
-        pt: "Separacao de responsabilidades por componente",
-        en: "Component-level separation of responsibilities",
-      },
-      {
-        pt: "Aplicacao de padrao visual consistente",
-        en: "Consistent visual pattern implementation",
-      },
-      {
-        pt: "Estrutura preparada para escalar novos conteudos",
-        en: "Structure prepared to scale new content",
-      },
-    ],
-    image: aluraFlixImg,
-    repoUrl: "https://github.com/Ricardo-Forttunato",
-  },
-  {
-    id: 4,
     title: { pt: "Candidato SPA", en: "Candidate SPA" },
     year: 2024,
-    period: { pt: "Q1 2024", en: "Q1 2024" },
+    period: { pt: "Q2 2024", en: "Q2 2024" },
     role: { pt: "Frontend Developer", en: "Frontend Developer" },
     description: {
       pt: "Single Page Application para apresentacao de perfil de candidato, com secoes orientadas para recrutamento.",
@@ -120,6 +64,62 @@ export const projects: ProjectItem[] = [
       },
     ],
     image: candidatoSPAImg,
+    repoUrl: "https://github.com/Ricardo-Forttunato",
+  },
+  {
+    id: 3,
+    title: { pt: "Alura Geek", en: "Alura Geek" },
+    year: 2024,
+    period: { pt: "Q3 2024", en: "Q3 2024" },
+    role: { pt: "Frontend Developer", en: "Frontend Developer" },
+    description: {
+      pt: "E-commerce de produtos geek com formulario de cadastro, vitrine e experiencia focada em usabilidade.",
+      en: "Geek product e-commerce with registration form, storefront, and usability-focused experience.",
+    },
+    stack: ["React", "JavaScript", "CSS", "REST API"],
+    highlights: [
+      {
+        pt: "Criacao de fluxo de cadastro de produtos",
+        en: "Product registration workflow implementation",
+      },
+      {
+        pt: "Organizacao de estados para listagem e filtros",
+        en: "State organization for listing and filters",
+      },
+      {
+        pt: "UI responsiva para desktop e mobile",
+        en: "Responsive UI for desktop and mobile",
+      },
+    ],
+    image: aluraGeekImg,
+    repoUrl: "https://github.com/Ricardo-Forttunato/alura-geek",
+  },
+  {
+    id: 4,
+    title: { pt: "NatureFlix", en: "NatureFlix" },
+    year: 2024,
+    period: { pt: "Q3 2024", en: "Q3 2024" },
+    role: { pt: "Frontend Developer", en: "Frontend Developer" },
+    description: {
+      pt: "Plataforma de catalogo de videos com destaque de categorias e foco em arquitetura de componentes.",
+      en: "Video catalog platform with category highlights and component architecture focus.",
+    },
+    stack: ["React", "JavaScript", "Styled Components"],
+    highlights: [
+      {
+        pt: "Separacao de responsabilidades por componente",
+        en: "Component-level separation of responsibilities",
+      },
+      {
+        pt: "Aplicacao de padrao visual consistente",
+        en: "Consistent visual pattern implementation",
+      },
+      {
+        pt: "Estrutura preparada para escalar novos conteudos",
+        en: "Structure prepared to scale new content",
+      },
+    ],
+    image: aluraFlixImg,
     repoUrl: "https://github.com/Ricardo-Forttunato",
   },
   {
