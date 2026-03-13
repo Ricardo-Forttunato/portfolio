@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './Layout.module.css';
+import 'primeicons/primeicons.css';
 
 function Layout() {
   const { t, i18n } = useTranslation();
@@ -66,10 +67,10 @@ function Layout() {
           © {new Date().getFullYear()} Ricardo Fortunato. {t('layout.footer.rights')}
         </span>
         <a href="https://github.com/Ricardo-Forttunato" target="_blank" rel="noreferrer">
-          GitHub
+          <i className="pi pi-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/ricardo-fortunato" target="_blank" rel="noreferrer">
-          LinkedIn
+          <i className="pi pi-linkedin"></i>
         </a>
       </footer>
     </div>

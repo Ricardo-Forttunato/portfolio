@@ -15,7 +15,7 @@ function groupByYear(items: ProjectItem[]): [number, ProjectItem[]][] {
 
   return Object.entries(group)
     .map(([year, list]) => [Number(year), list] as [number, ProjectItem[]])
-    .sort((a, b) => a[0] - b[0]);
+    .sort((a, b) => b[0] - a[0]);
 }
 
 function Portfolio() {
@@ -30,7 +30,7 @@ function Portfolio() {
       </header>
 
       <div className={styles.timeline}>
-        {timeline.sort((a, b) => b[0] - a[0]).map(([year, items]) => (
+        {timeline.map(([year, items]) => (
           <section key={year} className={styles.yearBlock}>
             <div className={styles.yearTag}>{year}</div>
 
