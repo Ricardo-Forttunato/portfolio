@@ -216,7 +216,7 @@ export const projects: ProjectItem[] = [
       },
     ],
     image: portfolioImg,
-    liveUrl: "https://portfolio-orcin-eight-77.vercel.app/",
+    liveUrl: "https://portfolio-ricardo-forttunato.vercel.app/portfolio",
     repoUrl: "https://github.com/Ricardo-Forttunato/portfolio",
   },
   {
