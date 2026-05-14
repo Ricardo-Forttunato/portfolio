@@ -157,8 +157,7 @@ export const projects: ProjectItem[] = [
       },
     ],
     image: imcTasksManagerImg,
-    liveUrl:
-      "https://ricardo-forttunato.github.io/imc_tasks_manager/landing-page/index.html#form-section",
+    liveUrl: "https://ricardo-forttunato.github.io/imc_tasks_manager/",
     repoUrl: "https://github.com/Ricardo-Forttunato/imc_tasks_manager",
   },
   {
