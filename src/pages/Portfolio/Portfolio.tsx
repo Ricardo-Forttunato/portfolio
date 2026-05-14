@@ -14,8 +14,17 @@ function groupByYear(items: ProjectItem[]): [number, ProjectItem[]][] {
   }, {});
 
   return Object.entries(group)
-    .map(([year, list]) => [Number(year), list] as [number, ProjectItem[]])
+    .map(([year, list]) => {
+      const sortedList = list.sort((a, b) => {
+        const periodA = a.period.pt.split(" ")[0];
+        const periodB = b.period.pt.split(" ")[0];
+
+        return periodA.localeCompare(periodB);
+      });
+      return [Number(year), sortedList] as [number, ProjectItem[]];
+    })
     .sort((a, b) => b[0] - a[0]);
+
 }
 
 function Portfolio() {

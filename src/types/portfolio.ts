@@ -6,7 +6,7 @@ export interface LocalizedText {
 }
 
 export interface ProjectItem {
-  id: number;
+  id: string;
   title: LocalizedText;
   year: number;
   period: LocalizedText;
