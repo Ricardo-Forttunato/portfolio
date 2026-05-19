@@ -1,4 +1,5 @@
 import type { SkillCategory } from '../types/portfolio';
+import type { Certificates } from "../types/portfolio";
 
 export const skillCategories: SkillCategory[] = [
   {

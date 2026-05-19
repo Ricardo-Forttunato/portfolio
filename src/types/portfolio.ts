@@ -24,3 +24,12 @@ export interface SkillCategory {
   title: LocalizedText;
   items: LocalizedText[];
 }
+
+export interface Certificates {
+  id: string;
+  title: LocalizedText;
+  issuer: string;
+  date: string;
+  url: string;
+  image: string;
+}
