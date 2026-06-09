@@ -193,8 +193,8 @@ export const projects: ProjectItem[] = [
   {
     id: crypto.randomUUID(),
     title: { pt: "Portfolio Profissional", en: "Professional Portfolio" },
-    year: 2025,
-    period: { pt: "Q2 2025", en: "Q2 2025" },
+    year: 2026,
+    period: { pt: "Q1 2026", en: "Q1 2026" },
     role: { pt: "Frontend Developer", en: "Frontend Developer" },
     description: {
       pt: "Refatoracao completa do portfolio com React + TypeScript, visual profissional e timeline cronologica de projetos.",
