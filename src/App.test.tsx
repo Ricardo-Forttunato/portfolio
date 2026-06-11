@@ -1,31 +1,36 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
+import userEvent from '@testing-library/user-event';
 import AppRoutes from './routes/routes';
 
-vi.mock('react-i18next', async (importOriginal) => {
-    const actual = await importOriginal<typeof import('react-i18next')>();
-    return {
-        ...actual,
-        useTranslation: () => ({
-            t: (key: string) => key,
-            i18n: {
-                resolvedLanguage: 'pt',
-            },
-        }),
-    }
-});
-    
+describe('Portfolio Routes - Dynamic Navigation', () => {
+    const routesTable = [
+        { linkName: /about/i, expectedTitle: /^about.title$/i },
+        { linkName: /skills/i, expectedTitle: /^skills.title$/i },
+        { linkName: /portfolio/i, expectedTitle: /^portfolio.title$/i },
+        { linkName: /contact/i, expectedTitle: /^contact.title$/i },
+    ]
 
-describe('Portfolio Routes', () => {
-    it('Should render the Home page on default route', () => {
-        render(
-            <AppRoutes />
-        );
+    it.each(routesTable)(
+        'Should navigate to the correct page when clicking on "$linkName" link',
+        async ({ linkName, expectedTitle }) => {
+            render(<AppRoutes />);
 
-        const homeTitle = screen.getByRole('heading', { name: /home\.title/i });
-        const homeDescription = screen.getByText(/home\.description/i);
-        
-        expect(homeTitle).toBeInTheDocument();
-        expect(homeDescription).toBeInTheDocument();
-    })
+            const user = userEvent.setup();
+            const menuLink = screen.getByRole('link', { name: linkName });
+            await user.click(menuLink);
+
+            const pageTitle = screen.getByRole('heading', { name: expectedTitle });
+            expect(pageTitle).toBeInTheDocument();
+        }
+    );
+
+    it('Should navigate to the Home page by default and handle invalid routes', async () => {
+        window.history.pushState({}, 'Invalid Page', '/broken-link');
+
+        render(<AppRoutes />);
+
+        expect(screen.getByText('Ricardo Fortunato')).toBeInTheDocument();
+        expect(screen.getByText('layout.role')).toBeInTheDocument();
+    });
 });

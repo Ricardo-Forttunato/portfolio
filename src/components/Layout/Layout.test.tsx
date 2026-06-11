@@ -3,19 +3,15 @@ import { describe, it, expect, vi } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
 import Layout from './Layout';
 
-vi.mock('react-i18next', () => ({
-  useTranslation: () => ({
-    t: (key: string) => key,
-    i18n: {
-      resolvedLanguage: 'pt',
-    },
-  }),
-}));
-
 describe('Layout Component', () => {
     it('Should render the onwer name "Ricardo Fortunato" inside the header', () => {
         render(
-            <MemoryRouter>
+          <MemoryRouter
+            future={{
+              v7_startTransition: true,
+              v7_relativeSplatPath: true
+            }}
+          >
                 <Layout />
             </MemoryRouter>
         );
