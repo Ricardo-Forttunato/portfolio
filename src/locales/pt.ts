@@ -22,13 +22,13 @@ const pt = {
     title:
       "Interfaces que transformam ideias em produtos claros, rapidos e escalaveis.",
     description:
-      "Desenvolvo experiencias web focadas em performance, consistencia visual e resultado de negocio. Trabalho do discovery a entrega com atencao em arquitetura, UX e evolucao continua.",
+      "Desenvolvo experiencias web focadas em performance, consistencia visual e resultado de negocio. Trabalho do discovery a entrega com atencão em arquitetura, UX e evolução continua.",
     ctaProjects: "Ver projetos",
     ctaContact: "Falar comigo",
     metrics: {
       projectsLabel: "Projetos entregues",
       yearsValue: "2 anos",
-      yearsLabel: "Evolucao constante",
+      yearsLabel: "Evolução constante",
       stackLabel: "Stack principal",
     },
     featuredTitle: "Projetos em destaque",
@@ -37,17 +37,17 @@ const pt = {
   about: {
     kicker: "Sobre mim",
     title:
-      "Construo produtos com equilibrio entre detalhe visual e solidez tecnica.",
+      "Construo produtos com equilibrio entre detalhe visual e solidez técnica.",
     paragraph1:
-      "Minha trajetoria combina aprendizado continuo, capacidade de execucao e foco em impacto. Nos ultimos anos, atuei em projetos de interfaces web com React, evoluindo para TypeScript e boas praticas de arquitetura de frontend.",
+      "Minha trajetoria combina aprendizado continuo, capacidade de execução e foco em impacto. Nos ultimos anos, atuei em projetos de interfaces web com React, evoluindo para TypeScript e boas praticas de arquitetura de frontend.",
     paragraph2:
-      "Hoje, meu objetivo e colaborar em produtos digitais que exigem qualidade de entrega, colaboracao em equipe e crescimento sustentavel da base de codigo.",
+      "Hoje, meu objetivo e colaborar em produtos digitais que exigem qualidade de entrega, colaboração em equipe e crescimento sustentavel da base de codigo.",
     differentialsTitle: "Diferenciais",
     differentials: [
-      "Comunicacao clara com times tecnicos e nao tecnicos.",
-      "Organizacao de componentes para escalar sem retrabalho.",
-      "Atencao em responsividade, semantica e acessibilidade.",
-      "Visao orientada a melhoria continua de produto.",
+      "Comunicação clara com times tecnicos e não tecnicos.",
+      "Organização de componentes para escalar sem retrabalho.",
+      "Atenção em responsividade, semantica e acessibilidade.",
+      "Visão orientada a melhoria continua de produto.",
     ],
   },
   skills: {
@@ -56,8 +56,8 @@ const pt = {
   },
   portfolio: {
     kicker: "Historico de projetos",
-    title: "Evolucao cronologica da minha trajetoria",
-    rolePrefix: "Atuacao:",
+    title: "Evolução cronologica da minha trajetoria",
+    rolePrefix: "Atuação:",
     liveProject: "Projeto ao vivo",
     repository: "Repositorio",
     previewAlt: "Preview do projeto {{title}}",
@@ -82,7 +82,7 @@ const pt = {
         "Configure as variaveis VITE_EMAILJS_* para habilitar o envio.",
       fillAll: "Preencha todos os campos antes de enviar.",
       success: "Mensagem enviada com sucesso!",
-      error: "Nao foi possivel enviar agora. Tente novamente.",
+      error: "Não foi possivel enviar agora. Tente novamente.",
     },
   },
 } as const;

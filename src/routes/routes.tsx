@@ -8,7 +8,12 @@ import Contact from '../pages/Contact/Contact';
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true
+      }}
+    >
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
