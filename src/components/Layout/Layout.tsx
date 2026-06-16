@@ -19,7 +19,7 @@ function Layout() {
       <header className={styles.header}>
         <div className={styles.brandBlock}>
           <p className={styles.eyebrow}>{t('layout.role')}</p>
-          <h1 className={styles.brand}>Ricardo Fortunato</h1>
+          <h1 className={styles.brand}>{t('layout.owner')}</h1>
         </div>
 
         <div className={styles.headerActions}>
@@ -29,7 +29,9 @@ function Layout() {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+                  isActive
+                    ? `${styles.navLink} ${styles.active}`
+                    : styles.navLink
                 }
                 end={item.path === '/'}
               >
@@ -38,24 +40,30 @@ function Layout() {
             ))}
           </nav>
 
-          <div className={styles.languageBox} aria-label={t('layout.language.label')}>
+          <div
+            className={styles.languageBox}
+            aria-label={t('layout.language.label')}
+          >
             <button
               type="button"
-              className={currentLanguage === 'pt' ? styles.langActive : styles.langBtn}
+              className={
+                currentLanguage === 'pt' ? styles.langActive : styles.langBtn
+              }
               onClick={() => i18n.changeLanguage('pt')}
             >
               {t('layout.language.pt')}
             </button>
             <button
               type="button"
-              className={currentLanguage === 'en' ? styles.langActive : styles.langBtn}
+              className={
+                currentLanguage === 'en' ? styles.langActive : styles.langBtn
+              }
               onClick={() => i18n.changeLanguage('en')}
             >
               {t('layout.language.en')}
             </button>
           </div>
         </div>
-
       </header>
 
       <main className={styles.main}>
@@ -64,12 +72,21 @@ function Layout() {
 
       <footer className={styles.footer}>
         <span>
-          © {new Date().getFullYear()} Ricardo Fortunato. {t('layout.footer.rights')}
+          © {new Date().getFullYear()} Ricardo Fortunato.{' '}
+          {t('layout.footer.rights')}
         </span>
-        <a href="https://github.com/Ricardo-Forttunato" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/Ricardo-Forttunato"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="pi pi-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/ricardo-fortunato" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/ricardo-fortunato"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="pi pi-linkedin"></i>
         </a>
       </footer>
