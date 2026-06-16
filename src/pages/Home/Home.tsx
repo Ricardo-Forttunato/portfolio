@@ -46,7 +46,12 @@ function Home() {
         <div className={styles.cards}>
           {featuredProjects.map((project) => (
             <article key={project.id} className={styles.card}>
-              <img src={project.image} alt={t('home.previewAlt', { title: readLocalizedText(project.title) })} />
+              <img
+                src={project.image}
+                alt={t('home.previewAlt', {
+                  title: readLocalizedText(project.title),
+                })}
+              />
               <div>
                 <span>{readLocalizedText(project.period)}</span>
                 <h4>{readLocalizedText(project.title)}</h4>
