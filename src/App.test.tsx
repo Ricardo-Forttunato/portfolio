@@ -1,14 +1,18 @@
 import { render, screen } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
+import { beforeEach, describe, it, expect } from 'vitest';
 import userEvent from '@testing-library/user-event';
 import AppRoutes from './routes/routes';
 
 describe('Portfolio Routes - Dynamic Navigation', () => {
+    beforeEach(() => {
+        window.history.pushState({}, 'Home', '/');
+    });
+
     const routesTable = [
-        { linkName: /about/i, expectedTitle: /^about.title$/i },
-        { linkName: /skills/i, expectedTitle: /^skills.title$/i },
-        { linkName: /portfolio/i, expectedTitle: /^portfolio.title$/i },
-        { linkName: /contact/i, expectedTitle: /^contact.title$/i },
+        { linkName: /sobre/i, expectedTitle: /construo produtos/i },
+        { linkName: /skills/i, expectedTitle: /habilidades aplicadas/i },
+        { linkName: /portfolio/i, expectedTitle: /cronologica da minha trajetoria/i },
+        { linkName: /contato/i, expectedTitle: /vamos tirar seu projeto/i },
     ]
 
     it.each(routesTable)(
@@ -30,7 +34,9 @@ describe('Portfolio Routes - Dynamic Navigation', () => {
 
         render(<AppRoutes />);
 
-        expect(screen.getByText('Ricardo Fortunato')).toBeInTheDocument();
-        expect(screen.getByText('layout.role')).toBeInTheDocument();
+        expect(
+          screen.getByRole('heading', { name: /ricardo fortunato/i, level: 1 })
+        ).toBeInTheDocument();
+        expect(screen.getByText(/desenvolvedor front-end/i)).toBeInTheDocument();
     });
 });

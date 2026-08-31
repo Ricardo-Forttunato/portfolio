@@ -1,6 +1,6 @@
 const en = {
   layout: {
-    role: 'Frontend Developer',
+    role: 'Front-end Developer',
     owner: 'Ricardo Fortunato',
     nav: {
       home: 'Home',

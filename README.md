@@ -29,6 +29,7 @@ Este projeto foi estruturado para:
 - i18next + react-i18next
 - EmailJS (pagina de contato)
 - CSS Modules
+- Yarn 4
 
 ## Estrutura do Projeto
 
@@ -72,28 +73,48 @@ src/
 
 ## Como Executar Localmente
 
-### 1. Instalar dependencias
+O projeto utiliza `yarn@4.15.0` como gerenciador de pacotes.
+
+### 1. Habilitar o Corepack
 
 ```bash
-npm install
+corepack enable
 ```
 
-### 2. Rodar em desenvolvimento
+### 2. Instalar dependencias
 
 ```bash
-npm run dev
+yarn install
 ```
 
-### 3. Gerar build de producao
+### 3. Rodar em desenvolvimento
 
 ```bash
-npm run build
+yarn dev
 ```
 
-### 4. Visualizar build local
+### 4. Gerar build de producao
 
 ```bash
-npm run preview
+yarn build
+```
+
+### 5. Visualizar build local
+
+```bash
+yarn preview
+```
+
+### 6. Executar testes
+
+```bash
+yarn test
+```
+
+### 7. Validar lint
+
+```bash
+yarn lint
 ```
 
 ## Variaveis de Ambiente
@@ -143,19 +164,19 @@ Edite `src/data/skills.ts` para atualizar categorias e itens exibidos na pagina 
 
 ## Scripts Disponiveis
 
-- `npm run dev`: inicia servidor de desenvolvimento
-- `npm run build`: gera build de producao
-- `npm run preview`: executa preview da build local
-- `npm run lint`: valida padrao de codigo
+- `yarn dev`: inicia o servidor de desenvolvimento com Vite
+- `yarn build`: executa a checagem TypeScript e gera a build de producao
+- `yarn preview`: executa o preview da build local
+- `yarn lint`: valida o padrao de codigo com ESLint
+- `yarn test`: executa os testes com Vitest
 
 ## Roadmap Sugerido
 
-- adicionar testes de componentes (ex.: Vitest + React Testing Library);
+- ampliar cobertura de testes para fluxos de pagina e integracao;
 - configurar CI para lint + build;
 - versionar conteudo do portfolio via CMS ou JSON externo;
-- adicionar internacionalizacao (pt/en).
+- adicionar testes end-to-end para navegacao principal.
 
 ## Licenca
 
 Distribuido sob a licenca MIT.
-

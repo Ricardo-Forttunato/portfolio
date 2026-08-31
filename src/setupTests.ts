@@ -1,36 +1,8 @@
 import "@testing-library/jest-dom";
-import { vi } from "vitest";
+import { beforeEach } from "vitest";
+import i18n from "./i18n";
 
-// Mocking CSS Modules
-
-// Mocking original i18n to avoid issues when link embedded in react-router-dom components
-vi.mock("react-i18next", async (importOriginal) => {
-  const actual = await importOriginal<typeof import("react-i18next")>();
-  return {
-    ...actual,
-    useTranslation: () => ({
-      t: (key: string) => key,
-      i18n: {
-        resolvedLanguage: "pt",
-      },
-    }),
-  };
-});
-
-// Mocking React Router DOM to avoid issues with components that use Link or NavLink
-vi.mock("react-router-dom", async (importOriginal) => {
-  const actual = await importOriginal<typeof import("react-router-dom")>();
-
-  return {
-    ...actual,
-    BrowserRouter: ({ children }: { children: React.ReactNode }) => {
-      return actual.BrowserRouter({
-        future: {
-          v7_startTransition: true,
-          v7_relativeSplatPath: true,
-        },
-        children,
-      });
-    },
-  };
+beforeEach(async () => {
+  localStorage.setItem("i18nextLng", "pt");
+  await i18n.changeLanguage("pt");
 });

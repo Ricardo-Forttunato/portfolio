@@ -1,6 +1,6 @@
 const pt = {
   layout: {
-    role: 'Frontend Developer',
+    role: 'Desenvolvedor Front-end',
     owner: 'Ricardo Fortunato',
     nav: {
       home: 'Inicio',

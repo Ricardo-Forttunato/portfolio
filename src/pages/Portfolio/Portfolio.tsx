@@ -4,6 +4,12 @@ import type { ProjectItem } from '../../types/portfolio';
 import { readLocalizedText } from '../../utils/locale';
 import styles from './PortfolioPage.module.css';
 
+function getQuarterValue(period: string): number {
+  const match = period.match(/^Q([1-4])\b/i);
+
+  return match ? Number(match[1]) : 0;
+}
+
 function groupByYear(items: ProjectItem[]): [number, ProjectItem[]][] {
   const group = items.reduce<Record<number, ProjectItem[]>>((acc, item) => {
     if (!acc[item.year]) {
@@ -15,16 +21,22 @@ function groupByYear(items: ProjectItem[]): [number, ProjectItem[]][] {
 
   return Object.entries(group)
     .map(([year, list]) => {
-      const sortedList = list.sort((a, b) => {
-        const periodA = a.period.pt.split(" ")[0];
-        const periodB = b.period.pt.split(" ")[0];
+      const sortedList = [...list]
+        .map((item, index) => ({ item, index }))
+        .sort((a, b) => {
+          const quarterDiff = getQuarterValue(b.item.period.pt) - getQuarterValue(a.item.period.pt);
 
-        return periodA.localeCompare(periodB);
-      });
+          if (quarterDiff !== 0) {
+            return quarterDiff;
+          }
+
+          return a.index - b.index;
+        })
+        .map(({ item }) => item);
+
       return [Number(year), sortedList] as [number, ProjectItem[]];
     })
     .sort((a, b) => b[0] - a[0]);
-
 }
 
 function Portfolio() {

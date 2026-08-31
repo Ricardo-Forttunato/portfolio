@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
 import Layout from './Layout';
 
 describe('Layout Component', () => {
-    it('Should render the onwer name "Ricardo Fortunato" inside the header', () => {
+    it('Should render the owner name inside the header', () => {
         render(
           <MemoryRouter
             future={{
@@ -16,7 +16,10 @@ describe('Layout Component', () => {
             </MemoryRouter>
         );
 
-        const brandName = screen.getByRole('heading', { name: /ricardo fortunato/i, level: 1 });
+        const brandName = screen.getByRole('heading', {
+          name: /ricardo fortunato/i,
+          level: 1,
+        });
 
         expect(brandName).toBeInTheDocument();
     })

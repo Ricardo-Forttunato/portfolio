@@ -10,6 +10,7 @@ import fungiFindersImg from "../assets/fungi-finders.png";
 import dashboardHighlightsImg from "../assets/dashboard-highlights.png";
 import imcTasksManagerImg from "../assets/imc-task-manager.png";
 import landingPageProfissionalAutonomoImg from "../assets/landing-page-senac-project.png";
+import landingPageB2BImg from '../assets/landing-page-b2b.png';
 
 export const projects: ProjectItem[] = [
   {
@@ -222,7 +223,7 @@ export const projects: ProjectItem[] = [
   {
     id: crypto.randomUUID(),
     title: { pt: 'Sistema MES', en: 'MES System' },
-    year: 2026,
+    year: 2025,
     period: { pt: 'Q2 2025', en: 'Q2 2025' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -270,5 +271,34 @@ export const projects: ProjectItem[] = [
       'https://ricardo-forttunato.github.io/landing-page-profissional-autonomo/',
     repoUrl:
       'https://github.com/Ricardo-Forttunato/landing-page-profissional-autonomo',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: { pt: 'Landing-Page B2B', en: 'B2B Landing-Page' },
+    year: 2026,
+    period: { pt: 'Q3 2026', en: 'Q3 2026' },
+    role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
+    description: {
+      pt: 'Landing page moderna e altamente customizável voltada para empresas B2B e produtos SaaS. Projetada para ser uma solução White Label ágil e focada em conversão, permitindo que empresas promovam suas soluções com alta performance e design responsivo.',
+      en: 'Modern and highly customizable B2B landing page for corporate companies and SaaS products. Designed as a flexible White Label solution focused on lead conversion, enabling companies to showcase their services with high performance and responsive design.',
+    },
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    highlights: [
+      {
+        pt: 'Arquitetura modular e reutilizável focada na fácil personalização de temas, marcas e conteúdos B2B.',
+        en: 'Modular and reusable architecture designed for effortless customization of themes, branding, and B2B content.',
+      },
+      {
+        pt: 'Layout otimizado para conversão de leads (CRO), com seções estratégicas de CTA, benefícios e apresentação de produto.',
+        en: 'CRO-optimized layout with strategic Call-to-Action sections, product benefits, and feature showcases.',
+      },
+      {
+        pt: 'Desenvolvido com React e Tailwind CSS, garantindo carregamento ultrarrápido, Pixel Perfect e total responsividade.',
+        en: 'Built with React and Tailwind CSS, ensuring lightning-fast performance, pixel-perfect UI, and full responsiveness.',
+      },
+    ],
+    image: landingPageB2BImg,
+    liveUrl: 'https://landing-page-b2b-omega.vercel.app',
+    repoUrl: 'https://github.com/Ricardo-Forttunato/landing-page-b2b',
   },
 ];
