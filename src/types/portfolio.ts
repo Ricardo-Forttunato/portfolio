@@ -11,6 +11,7 @@ export interface ProjectItem {
   year: number;
   period: LocalizedText;
   role: LocalizedText;
+  featured: boolean;
   description: LocalizedText;
   stack: string[];
   highlights: LocalizedText[];

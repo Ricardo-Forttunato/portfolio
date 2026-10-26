@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "yarn tsc && yarn vite build",
-    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest"
   },
@@ -24,6 +24,7 @@
     "swiper": "^12.1.2"
   },
   "devDependencies": {
+    "@eslint/js": "^8",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
@@ -36,9 +37,11 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "globals": "^13",
     "jsdom": "^29.1.1",
     "prettier": "^3.8.4",
     "typescript": "^5.8.2",
+    "typescript-eslint": "^8",
     "vite": "^6.4.1",
     "vitest": "^2.1.8"
   },

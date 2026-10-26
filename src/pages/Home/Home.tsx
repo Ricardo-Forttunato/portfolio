@@ -4,7 +4,18 @@ import { projects } from '../../data/projects';
 import { readLocalizedText } from '../../utils/locale';
 import styles from './HomePage.module.css';
 
-const featuredProjects = [...projects].sort((a, b) => b.year - a.year).slice(0, 3);
+const featuredProjects = [...projects]
+  .filter((project) => project.featured)
+  .sort((a, b) => {
+    if (a.year !== b.year) {
+      return b.year - a.year;
+    }
+
+    const quarterA = Number(a.period.en.match(/Q([1-4])/)?.[1] ?? 0);
+    const quarterB = Number(b.period.en.match(/Q([1-4])/)?.[1] ?? 0);
+
+    return quarterB - quarterA;
+  });
 
 function Home() {
   const { t } = useTranslation();

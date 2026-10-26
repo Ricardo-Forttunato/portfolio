@@ -9,7 +9,10 @@ describe('Portfolio timeline ordering', () => {
 
     const periods = screen.getAllByText(/^Q[1-4] \d{4}$/).map((element) => element.textContent);
     expect(periods).toEqual([
+      'Q4 2026',
       'Q3 2026',
+      'Q3 2026',
+      'Q2 2026',
       'Q1 2026',
       'Q2 2025',
       'Q1 2025',
@@ -23,6 +26,9 @@ describe('Portfolio timeline ordering', () => {
 
     const projectTitles = screen.getAllByRole('heading', { level: 3 }).map((element) => element.textContent);
     expect(projectTitles).toEqual([
+      'VLService',
+      'PDF Extractor',
+      'EasyDashboard',
       'Landing-Page B2B',
       'Portfolio Profissional',
       'Sistema MES',

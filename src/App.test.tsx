@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { beforeEach, describe, it, expect } from 'vitest';
 import userEvent from '@testing-library/user-event';
 import AppRoutes from './routes/routes';
+import { projects } from './data/projects';
 
 describe('Portfolio Routes - Dynamic Navigation', () => {
     beforeEach(() => {
@@ -38,5 +39,17 @@ describe('Portfolio Routes - Dynamic Navigation', () => {
           screen.getByRole('heading', { name: /ricardo fortunato/i, level: 1 })
         ).toBeInTheDocument();
         expect(screen.getByText(/desenvolvedor front-end/i)).toBeInTheDocument();
+    });
+
+    it('shows only projects marked as featured on the Home page', () => {
+        render(<AppRoutes />);
+
+        const featuredTitles = screen.getAllByRole('heading', { level: 4 }).map((element) => element.textContent);
+        const expectedTitles = projects
+            .filter((project) => project.featured)
+            .map((project) => project.title.pt);
+
+        expect(featuredTitles).toHaveLength(expectedTitles.length);
+        expect(featuredTitles).toEqual(expect.arrayContaining(expectedTitles));
     });
 });

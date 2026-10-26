@@ -11,12 +11,16 @@ import dashboardHighlightsImg from "../assets/dashboard-highlights.png";
 import imcTasksManagerImg from "../assets/imc-task-manager.png";
 import landingPageProfissionalAutonomoImg from "../assets/landing-page-senac-project.png";
 import landingPageB2BImg from '../assets/landing-page-b2b.png';
+import pdfExtractorImg from '../assets/pdf-extractor.png';
+import easyDashboardImg from '../assets/easydashboard-main-screen.png';
+import vlServiceImg from '../assets/vlservice-main-screen.png';
 
 export const projects: ProjectItem[] = [
   {
     id: crypto.randomUUID(),
     title: { pt: 'Candidato SPA', en: 'Candidate SPA' },
     year: 2024,
+    featured: false,
     period: { pt: 'Q1 2024', en: 'Q1 2024' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -45,6 +49,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Organo', en: 'Organo' },
     year: 2024,
+    featured: false,
     period: { pt: 'Q2 2024', en: 'Q2 2024' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -74,6 +79,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Alura Geek', en: 'Alura Geek' },
     year: 2024,
+    featured: false,
     period: { pt: 'Q3 2024', en: 'Q3 2024' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -103,6 +109,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'NatureFlix', en: 'NatureFlix' },
     year: 2024,
+    featured: false,
     period: { pt: 'Q3 2024', en: 'Q3 2024' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -132,6 +139,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Gerenciador de Tarefas de IMC', en: 'IMC Task Manager' },
     year: 2025,
+    featured: false,
     period: { pt: 'Q1 2025', en: 'Q1 2025' },
     role: { pt: 'FullStack Developer', en: 'FullStack Developer' },
     description: {
@@ -165,6 +173,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Fungi Finders', en: 'Fungi Finders' },
     year: 2025,
+    featured: false,
     period: { pt: 'Q1 2025', en: 'Q1 2025' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -195,6 +204,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Portfolio Profissional', en: 'Professional Portfolio' },
     year: 2026,
+    featured: false,
     period: { pt: 'Q1 2026', en: 'Q1 2026' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -224,6 +234,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Sistema MES', en: 'MES System' },
     year: 2025,
+    featured: true,
     period: { pt: 'Q2 2025', en: 'Q2 2025' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -253,6 +264,7 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Landing Page de Marketing', en: 'Marketing Landing Page' },
     year: 2024,
+    featured: false,
     period: { pt: 'Q3 2024', en: 'Q3 2024' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
@@ -276,7 +288,8 @@ export const projects: ProjectItem[] = [
     id: crypto.randomUUID(),
     title: { pt: 'Landing-Page B2B', en: 'B2B Landing-Page' },
     year: 2026,
-    period: { pt: 'Q3 2026', en: 'Q3 2026' },
+    featured: false,
+    period: { pt: 'Q2 2026', en: 'Q2 2026' },
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
     description: {
       pt: 'Landing page moderna e altamente customizável voltada para empresas B2B e produtos SaaS. Projetada para ser uma solução White Label ágil e focada em conversão, permitindo que empresas promovam suas soluções com alta performance e design responsivo.',
@@ -298,7 +311,141 @@ export const projects: ProjectItem[] = [
       },
     ],
     image: landingPageB2BImg,
-    liveUrl: 'https://landing-page-b2b-omega.vercel.app',
+    liveUrl: 'https://portfolio-ricardo-forttunato.vercel.app/',
     repoUrl: 'https://github.com/Ricardo-Forttunato/landing-page-b2b',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: { pt: 'PDF Extractor', en: 'PDF Extractor' },
+    year: 2026,
+    featured: false,
+    period: { pt: 'Q3 2026', en: 'Q3 2026' },
+    role: { pt: 'Web Developer', en: 'Web Developer' },
+    description: {
+      pt: 'Aplicação web para extração e estruturação automática de dados de cartões de ponto e holerites em PDF. Combina leitura de texto vetorial com fallback de OCR local via Tesseract.js, disponibilizando uma interface de revisão lado a lado para validação humana e exportação em XLSX, CSV e JSON.',
+      en: 'Web application for automated parsing and structuring of data from PDF timesheets and pay stubs. Combines native vector text extraction with local Tesseract.js OCR fallback, featuring a side-by-side review interface for human validation and export to XLSX, CSV, and JSON.',
+    },
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Material UI',
+      'Tesseract.js',
+      'pdfjs-dist',
+      'Zod',
+      'ExcelJS',
+      'Docker',
+    ],
+    highlights: [
+      {
+        pt: 'Pipeline de extração híbrida: processamento nativo via pdfjs-dist com fallback automático para OCR via Tesseract.js em documentos escaneados.',
+        en: 'Hybrid extraction pipeline: native vector parsing via pdfjs-dist with automatic Tesseract.js OCR fallback for scanned pages.',
+      },
+      {
+        pt: 'Interface de revisão split-screen criada com Material UI, permitindo validação dos dados em tempo real ao lado da visualização original do PDF.',
+        en: 'Split-screen review interface built with Material UI, enabling real-time data validation alongside the original PDF viewer.',
+      },
+      {
+        pt: 'Sistema de sinalização de incertezas e erros de validação (batidas ímpares e divergências matemáticas em holerites) antes da geração do XLSX/CSV.',
+        en: 'Validation error and uncertainty flagging system (odd time punches and pay stub math mismatches) prior to XLSX/CSV generation.',
+      },
+      {
+        pt: 'Arquitetura conteinerizada com Docker Compose para o processamento assíncrono em memória e preview estático seguro na Vercel.',
+        en: 'Containerized architecture using Docker Compose for asynchronous in-memory processing and secure static preview on Vercel.',
+      },
+    ],
+    image: pdfExtractorImg, // Lembre-se de importar a imagem da aplicação
+    liveUrl: 'https://pdf-extractor.vercel.app', // Atualize para o link da Vercel após renomear
+    repoUrl: 'https://github.com/Ricardo-Forttunato/pdf-extractor',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: { pt: 'EasyDashboard', en: 'EasyDashboard' },
+    year: 2026,
+    featured: true,
+    period: { pt: 'Q3 2026', en: 'Q3 2026' },
+    role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
+    description: {
+      pt: 'SPA client-side para geração e visualização de dashboards interativos a partir de dados manuais ou importação de arquivos (XLSX, CSV, PDF e imagens com OCR). Desenvolvida sob metodologia TDD e Clean Architecture, permite organizar múltiplos tipos de gráficos via drag-and-drop e exportar composições em alta qualidade para PDF e imagem diretamente no navegador, garantindo privacidade total sem dependência de servidores.',
+      en: 'Client-side SPA for generating and visualizing interactive dashboards from manual inputs or imported files (XLSX, CSV, PDF, and OCR-scanned images). Built with TDD and Clean Architecture, it enables organizing multiple chart types via drag-and-drop and exporting layouts to PDF and image directly in the browser, ensuring total privacy with zero backend dependency.',
+    },
+    stack: [
+      'Vue 3',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+      'Apache ECharts',
+      'Tesseract.js',
+      'PDF.js',
+      'SheetJS (XLSX)',
+      'Vitest',
+      'Vue i18n',
+    ],
+    highlights: [
+      {
+        pt: 'Ingestão de dados 100% no cliente com parsing de planilhas (XLSX/CSV) e extração de dados via PDF.js e OCR com Tesseract.js em Web Worker.',
+        en: '100% client-side data ingestion with spreadsheet parsing (XLSX/CSV) and text extraction via PDF.js and Tesseract.js OCR using Web Workers.',
+      },
+      {
+        pt: 'Criação e personalização de múltiplos tipos de gráficos (barras, linhas, pizza, gauge, pareto e área) com Apache ECharts e layout drag-and-drop.',
+        en: 'Creation and customization of multiple chart types (bar, line, pie, gauge, pareto, and area) with Apache ECharts and an interactive drag-and-drop layout.',
+      },
+      {
+        pt: 'Exportação do dashboard para PNG e PDF diretamente no navegador (Zero-Backend), mantendo os dados sensíveis estritamente em memória local.',
+        en: 'Direct in-browser dashboard export to PNG and PDF (Zero-Backend), keeping sensitive data strictly in local browser memory.',
+      },
+      {
+        pt: 'Desenvolvimento guiado por testes (TDD) com Vitest e internacionalização completa (pt-BR e en) com zero strings fixas no código.',
+        en: 'Test-Driven Development (TDD) with Vitest and full internationalization (pt-BR and en) with zero hardcoded strings.',
+      },
+    ],
+    image: easyDashboardImg, // TODO: Importar a imagem da aplicação (ex: import easyDashboardImg from '@/assets/projects/easy-dashboard.png')
+    liveUrl: 'https://easy-dashboard.vercel.app', // TODO: Atualizar quando o deploy na Vercel for publicado
+    repoUrl: 'https://github.com/Ricardo-Forttunato/easy-dashboard', // Detectado no remote origin do git
+  },
+  {
+    id: crypto.randomUUID(),
+    title: { pt: 'VLService', en: 'VLService' },
+    year: 2026,
+    featured: true,
+    period: { pt: 'Q4 2026', en: 'Q4 2026' },
+    role: { pt: 'Desenvolvedor full-stack', en: 'Full-stack Developer' },
+    description: {
+      pt: 'Plataforma de serviços locais que conecta clientes a prestadores. Clientes publicam pedidos, recebem propostas e negociam pela plataforma; prestadores gerenciam seus serviços, propostas e assinaturas.',
+      en: 'Local services platform connecting clients with service providers. Clients post requests, receive proposals and negotiate on the platform; providers manage their services, proposals and subscriptions.',
+    },
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'NestJS',
+      'Fastify',
+      'PostgreSQL',
+      'Keycloak',
+      'Mercado Pago',
+      'Docker Compose',
+    ],
+    highlights: [
+      {
+        pt: 'Marketplace com pedidos, propostas, negociação privada, aceite e avaliações, com regras de acesso aplicadas pela API.',
+        en: 'Marketplace with service requests, proposals, private negotiation, acceptance and reviews, with access rules enforced by the API.',
+      },
+      {
+        pt: 'Assinaturas para prestadores com checkout por Pix e cartão, confirmação de pagamento e controle do período de acesso.',
+        en: 'Provider subscriptions with Pix and card checkout, payment confirmation and access period management.',
+      },
+      {
+        pt: 'Autenticação com Keycloak e painéis específicos para clientes, prestadores e administradores.',
+        en: 'Keycloak authentication and dedicated dashboards for clients, providers and administrators.',
+      },
+      {
+        pt: 'Produção conteinerizada com backups externos cifrados, arquivamento de WAL e recuperação ensaiada em ambiente isolado.',
+        en: 'Containerized production with encrypted external backups, WAL archiving and recovery rehearsed in an isolated environment.',
+      },
+    ],
+    image: vlServiceImg, // Importe uma captura ou imagem do VLService.
+    liveUrl: 'https://vlservice.com.br',
+    repoUrl: 'https://github.com/vlservices/vl-service-project',
   },
 ];
