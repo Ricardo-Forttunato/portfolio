@@ -28,7 +28,6 @@ const pt = {
     ctaContact: 'Falar comigo',
     metrics: {
       projectsLabel: 'Projetos entregues',
-      yearsValue: '2 anos',
       yearsLabel: 'Evolução constante',
       stackLabel: 'Stack principal',
     },

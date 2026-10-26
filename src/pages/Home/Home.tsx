@@ -17,6 +17,28 @@ const featuredProjects = [...projects]
     return quarterB - quarterA;
   });
 
+const yearsOfExperience = (() => {
+  const currentYear = new Date().getFullYear();
+  const firstProjectYear = Math.min(...projects.map((project) => project.year));
+  return currentYear - firstProjectYear;
+})();
+
+const showPrincipalStack = () => {
+  const stackCount = new Map<string, number>();
+
+  projects.forEach((project) => {
+    project.stack.forEach((tech) => {
+      stackCount.set(tech, (stackCount.get(tech) ?? 0) + 1);
+    });
+  });
+
+  return [...stackCount.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([tech]) => tech)
+    .join(' + ');
+};
+
 function Home() {
   const { t } = useTranslation();
 
@@ -43,11 +65,11 @@ function Home() {
           <span>{t('home.metrics.projectsLabel')}</span>
         </article>
         <article>
-          <strong>{t('home.metrics.yearsValue')}</strong>
+          <strong>+ {yearsOfExperience}</strong>
           <span>{t('home.metrics.yearsLabel')}</span>
         </article>
         <article>
-          <strong>React + TS</strong>
+          <strong>{showPrincipalStack()}</strong>
           <span>{t('home.metrics.stackLabel')}</span>
         </article>
       </div>
