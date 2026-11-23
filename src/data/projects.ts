@@ -400,7 +400,7 @@ export const projects: ProjectItem[] = [
       },
     ],
     image: easyDashboardImg, // TODO: Importar a imagem da aplicação (ex: import easyDashboardImg from '@/assets/projects/easy-dashboard.png')
-    liveUrl: 'https://easy-dashboard.vercel.app', // TODO: Atualizar quando o deploy na Vercel for publicado
+    liveUrl: 'https://easy-dashboard-five.vercel.app/', // TODO: Atualizar quando o deploy na Vercel for publicado
     repoUrl: 'https://github.com/Ricardo-Forttunato/easy-dashboard', // Detectado no remote origin do git
   },
   {
